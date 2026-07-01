@@ -1,17 +1,17 @@
 ---
 layout: about
-title: about
+title: 关于
 permalink: /
-subtitle: <a href='#'>Hangzhou Dianzi University</a>. Hangzhou, China. Embodied AI · Multimodal BCI · VLA.
+subtitle: 杭州电子科技大学 · 具身智能 / 多模态学习 / 脑机接口
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Master's student, Control Engineering</p>
-    <p>School of Automation (AI)</p>
-    <p>Hangzhou Dianzi University</p>
+    <p>控制工程 · 硕士在读</p>
+    <p>自动化（人工智能）学院</p>
+    <p>杭州电子科技大学</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,14 +23,14 @@ announcements:
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-I am a Master's student in Control Engineering at the **School of Automation (Artificial Intelligence), Hangzhou Dianzi University**, advised on multimodal time-series signal modeling and decoding. My research centers on **EEG-fNIRS multimodal brain-signal decoding**, and I have published two first-author papers in Q1 TOP journals — *Applied Soft Computing* (IF≈6.6) and *IEEE Transactions on Affective Computing* (IF≈9.8).
+我是**杭州电子科技大学自动化（人工智能）学院控制工程专业**的硕士研究生，研究方向为多模态时序信号建模与解码，聚焦 **EEG-fNIRS 多模态脑信号解码**，以第一作者在 SCI Q1 TOP 期刊发表论文两篇——*Applied Soft Computing*（IF≈6.6）与 *IEEE Transactions on Affective Computing*（IF≈9.8）。
 
-Beyond neuroscience, I work on **embodied intelligence and vision-language-action (VLA) models**. I have interned at **Pudu Robotics** (VLA foundation-model reproduction, embodiment adaptation, inference acceleration, and RL post-training with ConRFT), **Anker Innovations** (VLA deployment on Unitree Go2, quadruped multimodal data pipelines, teleop data collection, and VLM auto-labeling), and the **CenBRAIN Lab at Westlake University** (invasive brain-computer interface speech decoding from sEEG).
+在神经科学之外，我也从事**具身智能与视觉-语言-动作（VLA）模型**研究：曾在**普渡机器人**实习（VLA 基座模型复现、本体适配、推理加速与 ConRFT 强化学习后训练），**安克创新**实习（InternVLA-N1 在 Unitree Go2 上的部署、四足多模态数据产线、遥操作数据采集与 VLM 自动标注），以及**西湖大学 CenBRAIN 实验室**实习（侵入式脑机接口的 sEEG 语音解码）。
 
-I am passionate about closing the loop between perception, language, and action — building robots and neural interfaces that can see, understand, and act in the physical world.
+我关注如何打通感知、语言与行动的闭环——构建能够"看见、理解并在物理世界中行动"的机器人与神经接口。
 
-I am **actively seeking PhD opportunities** (starting Fall 2027) and **full-time research roles** in embodied AI, multimodal learning, and brain-computer interfaces. Feel free to reach out via email — my [CV (PDF)](/assets/pdf/cv_xiaoqi_luo.pdf) is available for download.
+我**正在积极寻找 2027 年秋季入学的博士机会**，以及具身智能、多模态学习与脑机接口方向的**全职研究岗位**。欢迎通过邮件联系，可在此下载我的 [简历（PDF）](/assets/pdf/cv_xiaoqi_luo.pdf)。

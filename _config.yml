@@ -2,20 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: 罗骁齐 # the website title (if blank, full name will be used instead)
 first_name: Xiaoqi
 middle_name: # leave blank if you do not have a middle name
 last_name: Luo
 contact_note: >
-  Looking for PhD opportunities starting Fall 2027 and full-time research roles.
+  正在寻找 2027 年秋季入学的博士机会及全职研究岗位。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Xiaoqi Luo — research in embodied intelligence, multimodal learning, and brain-computer interfaces.
+  罗骁齐 — 从事具身智能、多模态学习与脑机接口方向的研究。
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. # remove if you do not use Unsplash photos
-keywords: embodied AI, multimodal learning, brain-computer interface, vision-language-action, robotics, deep learning
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+keywords: 具身智能, 多模态学习, 脑机接口, 视觉-语言-动作模型, 机器人, 深度学习, VLA, EEG-fNIRS
+lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://luoxiaoqi.github.io # the base hostname & protocol for your site
@@ -122,8 +121,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Xiaoqi Luo # blog_name will be displayed in your blog page
-blog_description: notes on research, embodied AI, and graduate-school / job search
+blog_name: 罗骁齐 # blog_name will be displayed in your blog page
+blog_description: 研究 · 具身智能 · 申博与求职笔记
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

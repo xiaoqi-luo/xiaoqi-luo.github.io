@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Crude-Oil Market Data & Intelligent Investment-Research Platform
-description: multi-asset market data, low-latency streaming, DAG strategy orchestration
-img: assets/img/4.jpg # TODO: replace with a real dashboard / architecture screenshot
+title: 原油市场数据与智能投研平台
+description: 多资产行情数据、低延迟流式链路与 DAG 策略编排
+img: assets/img/4.jpg # TODO: 替换为仪表盘 / 架构图真实截图
 importance: 4
-category: work
+category: 工作
 related_publications: false
 ---
 
-Backend development for **Ningbo Bohui Chemical** (Oct 2025 – Apr 2026), building a crude-oil market data and AI quant-strategy investment-research platform.
+2025.10 – 2026.04 为**宁波博汇化工科技股份有限公司**做后端开发，建设原油市场数据与 AI 量化策略投研平台。
 
-## AI quant strategy workbench
-Used **Codex** and **Claude Code** to design the workbench. Built a strategy-factor **Workflow** with **DAG visual orchestration**, ingested real-time exchange quotes, and constructed a **CTP → Kafka → ClickHouse** low-latency streaming path.
+## AI 量化策略工作台
+使用 **Codex** 与 **Claude Code** 设计工作台，构建策略因子 **Workflow** 与 **DAG 可视化编排**，接入交易所实时行情，搭建 **CTP → Kafka → ClickHouse** 低延迟流式链路。
 
-## Multi-asset market & backtest data pipeline
-Integrated **FMP**, **TradingView**, a **PostgreSQL hot DB**, **OSS historical archive**, and real-time indicator services across **futures, US equities, and A-shares**. Designed a **main-site + Mac worker + OSS** architecture that decoupled compute tasks from the main pipeline.
+## 多资产行情与回测数据链路
+接入 **FMP**、**TradingView**、**PostgreSQL hot DB**、**OSS 历史归档**与实时指标服务，覆盖**期货、美股、A股**；设计**主站 + Mac worker + OSS** 架构，将计算任务从主链路解耦。

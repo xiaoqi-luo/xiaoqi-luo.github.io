@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: 项目
 permalink: /projects/
-description: Internship and research projects across VLA foundation models, embodied robot learning, and brain-computer interfaces.
+description: VLA 基座模型、具身机器人学习与脑机接口方向的实习与项目。
 nav: true
-nav_order: 3
-display_categories: [work, research]
+nav_order: 2
+display_categories: [工作, 研究]
 horizontal: false
 ---
 

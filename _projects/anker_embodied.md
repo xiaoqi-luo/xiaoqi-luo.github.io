@@ -1,36 +1,36 @@
 ---
 layout: page
-title: Anker Innovations — Embodied Closed-Loop
-description: VLA deployment on quadruped, multimodal data pipelines, teleop collection, VLM auto-labeling
-img: assets/img/2.jpg # TODO: replace with a real teaser of Go2 / manipulator setup
+title: 安克创新 — 具身闭环
+description: 四足 VLA 部署、多模态数据产线、遥操作采集与 VLM 自动标注
+img: assets/img/2.jpg # TODO: 替换为 Go2 / 机械臂采集场景真实效果图
 importance: 2
-category: work
+category: 工作
 related_publications: false
 ---
 
-Internship at **Anker Innovations** (Oct 2025 – Mar 2026) as an **Embodied Closed-Loop Algorithm Intern**, working on VLA deployment, multimodal robot-data pipelines, teleoperation data collection, and VLM auto-labeling.
+2025.10 – 2026.03 在**安克创新**担任**具身闭环算法实习生**，负责 VLA 模型部署、四足机器狗多模态数据产线、机械臂数据采集与 VLM 自动标注工具链。
 
-## VLA reproduction & validation
-Reproduced **ACT**, **pi0.5**, and **Diffusion Policy**, completing end-to-end **Franka block-insertion** validation. Deployed **InternVLA-N1** in a client/server split on the **Unitree Go2**:
-- **RTX 4090** side: HTTP inference server
-- **Jetson Orin** side: D435i capture + ROS2/UDP control bridge + client execution
-- Trajectories streamed over LAN HTTP for language-guided navigation
+## VLA 复现与验证
+复现 **ACT**、**pi0.5**、**Diffusion Policy**，完成 **Franka 方块插入凹槽**端到端验证；将 **InternVLA-N1** 以 client/server 架构部署至 **Unitree Go2**：
+- **RTX 4090** 侧：运行 HTTP 推理 server
+- **Jetson Orin** 侧：部署 D435i 采集与 ROS2/UDP 控制桥接
+- 经局域网 HTTP 回传轨迹，实现语言指令导航
 
-## Quadruped multimodal data pipeline
-Built an **8-sensor spatiotemporal alignment** chain:
-- 3-LiDAR extrinsic calibration, coordinate transforms, and point-cloud fusion
-- 5 fisheye-camera calibration & undistortion
-- MCAP slicing / unpacking / alignment services on **Kubernetes** with task-queue async scheduling
+## 四足多模态数据产线
+构建 **8 路传感器时空对齐**链路：
+- 三路 LiDAR 外参标定、坐标系变换与点云融合
+- 5 路鱼眼相机标定去畸变
+- 在 Kubernetes 上部署 MCAP 切片/解包/对齐服务并通过任务队列异步调度
 
-Processed **tens of TB** of raw robot data.
+累计处理**数十 TB** 原始机器人数据。
 
-## Manipulator data collection
-Built **UMI + teleop** collection pipelines: LAN networking, NTP clock sync, station ingest, **rerun** playback, multimodal alignment, and **WebDataset / lerobot** format conversion. Surveyed data-quality eval literature and industry methods, then designed a **5-dimension on-device quality rule check** plus a cloud data-lake scoring algorithm.
+## 机械臂数据采集
+搭建 **UMI 与 teleop** 数据采集 pipeline，覆盖局域网组网、NTP 时钟同步、站点接收上传、**rerun** 回放、多模态对齐与 **WebDataset/lerobot** 格式转换；调研数据质量评估方法，设计 **5 维端侧质量规则校验**与云端湖仓打分算法。
 
-## VLM auto-labeling & toolchain
-Built a **Qwen-VL + GroundingDINO** video-understanding data-production line (scene description, object grounding, region annotation). Via **vLLM** high-concurrency inference, multi-machine parallelism, and queue load balancing, lifted end-to-end throughput by **~30%**.
+## VLM 预标注与工具链
+搭建基于 **Qwen-VL 与 GroundingDINO** 的视频理解数据生产链路（场景描述、目标定位、区域标注），通过 **vLLM** 高并发推理、多机并行与队列负载均衡，将端到端生产吞吐提升约 **30%**。
 
-<!-- TODO: add a demo video of Go2 navigation or the manipulator data collection.
+<!-- TODO: 添加 Go2 导航或机械臂采集演示视频。
 {% include video.liquid path="assets/video/anker_demo.mp4" controls="true" %} -->
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
@@ -40,5 +40,5 @@ Built a **Qwen-VL + GroundingDINO** video-understanding data-production line (sc
   </div>
 </div>
 <div class="caption">
-  TODO: replace with a demo video of the Go2 language-guided navigation or manipulator collection setup.
+  TODO：替换为 Go2 语言指令导航或机械臂采集场景的演示视频。
 </div>
