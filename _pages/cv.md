@@ -38,6 +38,12 @@ toc:
 
 ## 实习经历
 
+### 简智新创（Genrobot.ai）— 灵巧手算法实习生 ｜ 2026.06 – 2026.09
+围绕灵巧手遥操作 Retarget 与接触式手内操作的 RL Sim-to-Real 开展工作。
+
+- **Dex 外骨骼遥操作 Retarget**：基于 DexPilot 算法改进实时 retarget 框架，在机器人手可执行约束下自适应选择整体手型、指尖相对关系、指尖方向、掌心姿态、关节正则与速度平滑等关键目标，实现 Dex 外骨骼 / 动捕 / 视觉输入到 Wuji Hand2 20-DoF 关节轨迹的稳定映射。
+- **接触 Retarget + RL Sim-to-Real**：针对转笔等存在物体接触的手内操作任务，保持人手-物体的任务相关接触拓扑，生成带物体位姿与手部 21 keypoint 的 reference 轨迹；在 Isaac Lab 中通过 reference-state initialization、residual joint-position action 与 PPO 训练 tracking policy，最终迁移到真机完成转笔任务。
+
 ### 普渡机器人 — VLA 算法实习生 ｜ 2026.03 – 2026.06
 为自研轮式双臂机器人开展视觉-语言-动作基座模型的复现、适配、评测、推理加速与强化学习后训练。
 
