@@ -2,7 +2,7 @@
 layout: page
 title: 西湖大学 CenBRAIN — 侵入式脑机接口语音解码
 description: 基于 sEEG 的侵入式脑机接口中文语音解码
-img: assets/img/3.jpg # TODO: 替换为 sEEG 信号 / 解码架构示意图
+img: assets/img/logo_cenbrain.png
 importance: 3
 category: 研究
 related_publications: false

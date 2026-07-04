@@ -2,7 +2,7 @@
 layout: page
 title: 普渡机器人 — VLA 基座模型
 description: 模型复现与本体适配、评测、推理加速与强化学习后训练
-img: assets/img/1.jpg # TODO: 替换为机器人真实效果图
+img: assets/img/logo_pudu.png
 importance: 1
 category: 工作
 related_publications: false
