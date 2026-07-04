@@ -30,15 +30,12 @@ related_publications: false
 ## VLM 预标注与工具链
 搭建基于 **Qwen-VL 与 GroundingDINO** 的视频理解数据生产链路（场景描述、目标定位、区域标注），通过 **vLLM** 高并发推理、多机并行与队列负载均衡，将端到端生产吞吐提升约 **30%**。
 
-<!-- TODO: 添加 Go2 导航或机械臂采集演示视频。
-{% include video.liquid path="assets/video/anker_demo.mp4" controls="true" %} -->
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    <div class="ratio ratio-16x9">
-      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+## 演示：InternVLA-N1 推理部署
+InternVLA-N1 的推理部署与实机运行演示。
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/anker_internvla.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
   </div>
 </div>
-<div class="caption">
-  TODO：替换为 Go2 语言指令导航或机械臂采集场景的演示视频。
-</div>
+<div class="caption">InternVLA-N1 推理部署实机演示。</div>
