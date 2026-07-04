@@ -26,3 +26,13 @@ related_publications: false
 - 保持人手-物体的**任务相关接触拓扑**，生成带**物体位姿**与**手部 21 keypoint** 的 reference 轨迹；
 - 在 **Isaac Lab** 中通过 **reference-state initialization**、**residual joint-position action** 与 **PPO** 训练 tracking policy；
 - 最终迁移到**真机**完成转笔任务。
+
+## 演示：基于 pi0.5 的 SFT 策略
+基于 **pi0.5** 进行监督微调（SFT）的策略实机演示。
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_pi05_sft.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">基于 pi0.5 的 SFT 策略实机演示。</div>

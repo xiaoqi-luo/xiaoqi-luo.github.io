@@ -27,15 +27,12 @@ related_publications: false
 ## RL 后训练
 在 FlowerVLA SFT 权重后接 **ConRFT** 强化学习微调，设计人在环路流程（**SFT → 离线 RL → 在线 RL**），结合 BC 与 Q-learning 双重 loss、人类干预与稀疏奖励，构建 reward model 与真机 rollout 评测闭环，显著提升抓取/推动任务成功率与错误恢复能力。
 
-<!-- TODO: 添加演示视频。本地文件示例：
-{% include video.liquid path="assets/video/pudu_demo.mp4" controls="true" %} -->
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    <div class="ratio ratio-16x9">
-      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+## 演示：宇树 G1（基于 GR00T）
+在宇树 G1 人形机器人上基于 GR00T 进行策略推理的实机演示。
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/pudu_g1_groot.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
   </div>
 </div>
-<div class="caption">
-  TODO：将 VIDEO_ID 替换为机器人演示 YouTube 视频，或用上面的 video 引入本地视频。
-</div>
+<div class="caption">宇树 G1 · 基于 GR00T 的策略推理实机演示。</div>
