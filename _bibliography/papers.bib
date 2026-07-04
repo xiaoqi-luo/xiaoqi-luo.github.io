@@ -1,29 +1,16 @@
 ---
 ---
 
-@article{luo2026physiosync,
-  abbr           = {IEEE T-AFFC},
-  bibtex_show    = {true},
-  title          = {Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG--fNIRS Emotion Regression},
-  author         = {Gao, Yunyuan and Luo, Xiaoqi and Zhang, Zhengnan and Lu, Jiangwen and Zhang, Yingchun and Huang, Ruyue},
-  journal        = {IEEE Transactions on Affective Computing},
-  year           = {2026},
-  publisher      = {IEEE},
-  abstract       = {Continuous affect tracking is central to closed-loop affective brain--computer interfaces and adaptive human--computer interaction. Continuous EEG--fNIRS regression is well suited to this setting because EEG captures rapid neural dynamics and fNIRS provides complementary hemodynamic information, but direct fusion often underperforms EEG-only baselines when neurovascular coupling (NVC) introduces subject- and region-dependent delays. PhysioSync addresses this by performing HRF-like temporal alignment and residual-aware reliability control before multimodal fusion. A learnable dual-gamma kernel maps EEG-derived drive to the fNIRS timeline through finite-window causal convolution, and the resulting residuals modulate the contribution of hemodynamic evidence during fusion. A linear-complexity Mamba encoder provides long-context EEG representation. On the 32-subject REFED within-subject 3-fold benchmark, PhysioSync reduces Avg MAE by 6.1% relative to the best fusion baseline and by 7.5% relative to EEG-only, while showing reduced error growth in 1--3 s trajectory forecasting.},
-  keywords       = {physiological affect recognition, EEG--fNIRS fusion, continuous emotion regression, neurovascular coupling, multimodal affective BCI},
-  pdf            = {physiosync_taffc.pdf},
-  preview        = {physiosync.png},
-  selected       = {true},
-  additional_info = {. *SCI / JCR Q1 TOP*, IF≈9.8. Framework: **PhysioSync**.}
-}
-
-@article{luo2026pcman,
+@article{gao2026pcman,
   abbr           = {ASOC},
   bibtex_show    = {true},
-  title          = {Progressive Cross-Modal Attention Network for Brain-Computer Interface Decoding Using EEG and Functional Near-Infrared Spectroscopy (fNIRS)},
+  title          = {Progressive Cross-Modal Attention Network for Brain--Computer Interface Decoding Using EEG and Functional Near-Infrared Spectroscopy (fNIRS)},
   author         = {Gao, Yunyuan and Luo, Xiaoqi and Zhang, Zhengnan and Shao, Xu and Qin, Yanhua},
   journal        = {Applied Soft Computing},
+  volume         = {199C},
+  pages          = {115318},
   year           = {2026},
+  month          = {jun},
   publisher      = {Elsevier},
   doi            = {10.1016/j.asoc.2026.115318},
   url            = {https://doi.org/10.1016/j.asoc.2026.115318},
@@ -33,5 +20,19 @@
   pdf            = {pcman_asoc2026.pdf},
   preview        = {pcman.png},
   selected       = {true},
-  additional_info = {. *SCI / JCR Q1 TOP*, IF≈6.6. Framework: **PCMAN**.}
+  additional_info = {. *SCI / JCR Q1 TOP*, IF≈6.6. Second author (student author). Framework: **PCMAN**.}
+}
+
+@article{gao2026physiosync,
+  abbr           = {Under Review},
+  bibtex_show    = {true},
+  title          = {Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG--fNIRS Emotion Regression},
+  author         = {Gao, Yunyuan and Luo, Xiaoqi and Zhang, Zhengnan and Lu, Jiangwen and Zhang, Yingchun and Huang, Ruyue},
+  journal        = {IEEE Transactions on Affective Computing (Under Review, Major Revision R1)},
+  year           = {2026},
+  abstract       = {Continuous affect tracking is central to closed-loop affective brain--computer interfaces and adaptive human--computer interaction. Continuous EEG--fNIRS regression is well suited to this setting because EEG captures rapid neural dynamics and fNIRS provides complementary hemodynamic information, but direct fusion often underperforms EEG-only baselines when neurovascular coupling (NVC) introduces subject- and region-dependent delays. PhysioSync addresses this by performing HRF-like temporal alignment and residual-aware reliability control before multimodal fusion. A learnable dual-gamma kernel maps EEG-derived drive to the fNIRS timeline through finite-window causal convolution, and the resulting residuals modulate the contribution of hemodynamic evidence during fusion. A linear-complexity Mamba encoder provides long-context EEG representation. On the 32-subject REFED within-subject 3-fold benchmark, PhysioSync reduces Avg MAE by 6.1% relative to the best fusion baseline and by 7.5% relative to EEG-only, while showing reduced error growth in 1--3 s trajectory forecasting.},
+  keywords       = {physiological affect recognition, EEG--fNIRS fusion, continuous emotion regression, neurovascular coupling, multimodal affective BCI},
+  preview        = {physiosync.png},
+  selected       = {true},
+  additional_info = {. *Under Review* (Major Revision, R1) at IEEE Transactions on Affective Computing. Second author (student author). Framework: **PhysioSync**.}
 }
