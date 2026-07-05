@@ -27,6 +27,27 @@ related_publications: false
 ## RL 后训练
 在 FlowerVLA SFT 权重后接 **ConRFT** 强化学习微调，设计人在环路流程（**SFT → 离线 RL → 在线 RL**），结合 BC 与 Q-learning 双重 loss、人类干预与稀疏奖励，构建 reward model 与真机 rollout 评测闭环，显著提升抓取/推动任务成功率与错误恢复能力。
 
+### HIL-SERL 复现与真机人在环 RL
+复现 **HIL-SERL**（human-in-the-loop sample-efficient RL），在 **Franka** 上完成圆柱插槽 / pick-and-insert 任务的真机训练与消融：
+
+- 系统研究 **critic/actor 更新频率**、人工介入时机与观测坐标系（绝对 / 相对）对收敛、熵坍塌与策略遗忘的影响；发现**前期需要较多成功干预来正确引导 critic**，且人工介入越"丝滑"、策略动作振荡越小。
+- 在圆柱插槽任务上训练约 **60k 步（2.5–3h）达到 97/106（90%+）** 成功率，验证了**人在环教学显著提升成功率**、以及**模型能从失败中学习**（首次失败后第二次多能自主完成）。
+- 开展**泛化性对比实验**（相邻孔位插入干扰圆柱 / 连接件、封孔、更换工作台背景等），量化 HIL-SERL 的泛化边界（对背景变化与第一孔干扰较敏感）。
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/pudu_hilserl_insert.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">HIL-SERL 真机人在环 RL · Franka 圆柱插槽任务（约 60k 步，成功率 97/106）。</div>
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/pudu_hilserl_generalize.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">泛化性测试 · 相邻槽位横向卡入连接件干扰下仍可完成插入（100%）。</div>
+
 ## HIL-SERL 真机强化学习复现（Franka 圆柱抓取-插孔）
 复现 **HIL-SERL**（Human-in-the-Loop 样本高效强化学习）框架，在 **Franka** 机械臂上完成圆柱**抓取-插孔**任务的真机人在环训练：
 
