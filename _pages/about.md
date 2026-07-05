@@ -34,7 +34,7 @@ latest_posts:
 - [**Neuro-SSCL**](/publications/#lu2026neurosscl) · *IEEE JBHI*（IF≈6.8 · JCR Q1 · 中科院医学 2区 TOP；第二作者，初审中）：将**神经科学先验**（容积传导的局部空间相关 + 全局功能连接拓扑）注入**半监督对比学习**，并以谱自适应多尺度图对比与多域自适应，缓解跨被试 EEG 情绪识别的**标签稀缺**问题。
 - [**AG-LRTD**](/publications/#wu2026aglrtd) · *IEEE TETCI*（IF≈6.5 · JCR Q1 · 中科院计算机 2区；第三作者，初审中）：提出**注意力引导的低秩张量分解**，把 MI-EEG 组织为"通道 × 时间 × 频带 × 试次"四阶张量，用卷积注意力引导张量积低秩分解，并以 tubal-rank 约束 + 残差稠密隐式正则兼顾判别力与**可解释性**。
 
-除此之外，我主要从事**具身智能**方向的研究：曾在**简智新创**实习，担任灵巧手算法实习生（Dex 外骨骼摇操作 Retarget，密集接触任务 Retarget + RL Sim-to-Real）；**宇树科技**实习，担任算法实习生（基于 G1 人形的 loco-manipulation 的 HIL-RL）；**普渡机器人**实习（VLA 基座模型复现、自研本体适配、推理加速与人在环的机械臂真机强化学习后训练 RFT）；**安克创新**实习（模型部署、四足多模态数据产线、遥操作数据采集与 VLM 自动标注产线）；以及**西湖大学 CenBRAIN 实验室**实习（侵入式脑机接口的 sEEG 语音解码）。
+除此之外，我主要从事**具身智能**方向的研究（点击单位名可跳转对应[项目](/projects/)）：曾在 [**简智新创**](/projects/genrobot_dexhand/) 实习，担任灵巧手算法实习生（Dex 外骨骼摇操作 Retarget，密集接触任务 Retarget + RL Sim-to-Real）；[**宇树科技**](/projects/unitree_g1/) 实习，担任算法实习生（基于 G1 人形的 loco-manipulation 的 HIL-RL）；[**普渡机器人**](/projects/pudu_vla/) 实习（VLA 基座模型复现、自研本体适配、推理加速与人在环的机械臂真机强化学习后训练 RFT）；[**安克创新**](/projects/anker_embodied/) 实习（模型部署、四足多模态数据产线、遥操作数据采集与 VLM 自动标注产线）；以及 [**西湖大学 CenBRAIN 实验室**](/projects/cenbrain_ibci/) 实习（侵入式脑机接口的 sEEG 语音解码）。
 
 我关注如何打通感知、语言与行动的闭环——构建能够“看见、理解并在物理世界中行动”的机器人与神经接口。
 
