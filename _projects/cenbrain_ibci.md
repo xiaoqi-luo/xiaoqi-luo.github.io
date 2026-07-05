@@ -22,6 +22,13 @@ related_publications: false
 - **Initial、Tone、Final** 三路并行解码器
 - 通过 **Beam Search**、**pinyin-to-char** 映射与 **LLM 重排序**恢复句子级中文输出
 
+<div class="row justify-content-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/cenbrain_arch.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="sEEG 中文语音解码架构" />
+  </div>
+</div>
+<div class="caption">解码架构：原始 sEEG → 通道选择 → 单字神经活动 → 三分支 CNN 分别预测声母（+GNN）/ 声调 / 韵母簇 → 音节要素概率序列 → 语言模型 → 句子级中文输出。</div>
+
 ## 演示
 侵入式脑机接口语音解码演示。
 
