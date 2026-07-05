@@ -27,7 +27,7 @@ toc:
 自动化（人工智能）学院 · 控制工程 ｜ **GPA 3.7/4.0**
 
 - 研究方向：多模态时序信号建模与解码。
-- 作为学生作者参与多篇 EEG 解码相关论文：在 *Applied Soft Computing*（SCI/JCR Q1 TOP，IF≈6.6，第二作者（导师一作））发表一篇；另有三篇在审：*IEEE Transactions on Affective Computing*（第二作者（导师一作），大修已返修）、*IEEE Journal of Biomedical and Health Informatics*（第二作者，初审中）与 *IEEE Transactions on Emerging Topics in Computational Intelligence*（第三作者，初审中）。
+- 作为学生作者参与多篇 EEG 解码相关论文：在 *Applied Soft Computing*（IF≈6.6 · JCR Q1 · 中科院计算机 2区 TOP，第二作者（导师一作））发表一篇；另有三篇在审：*IEEE T-AFFC*（IF≈9.8 · JCR Q1 · 中科院计算机 1区 TOP，第二作者（导师一作），大修已返修）、*IEEE JBHI*（IF≈6.8 · JCR Q1 · 中科院医学 2区，第二作者，初审中）与 *IEEE TETCI*（IF≈6.5 · JCR Q1 · 中科院计算机 2区，第三作者，初审中）。
 
 ### 华东交通大学 — 工学学士 ｜ 2020.09 – 2024.06
 电气与自动化工程学院 · 自动化 ｜ **GPA 4.0/5.0（专业前 30%）**
@@ -73,10 +73,10 @@ toc:
 
 ## 论文
 
-- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Xu Shao, Yanhua Qin. "Progressive Cross-Modal Attention Network for Brain–Computer Interface Decoding Using EEG and fNIRS." *Applied Soft Computing*, **199C (2026) 115318**（SCI/JCR Q1 TOP，IF≈6.6）。2026-04-24 接收，2026-06-05 online。[doi:10.1016/j.asoc.2026.115318](https://doi.org/10.1016/j.asoc.2026.115318)。框架 **PCMAN**。
-- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Jiangwen Lu, Yingchun Zhang, Ruyue Huang. "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG–fNIRS Emotion Regression." *IEEE Transactions on Affective Computing*（**大修已返修 / Under Review, R1**）。框架 **PhysioSync**。
-- Jiangwen Lu, **Xiaoqi Luo（第二作者）**, Weixiang Gao, Ruyue Huang, Yunyuan Gao. "Neuro-SSCL: A Neuro-Aware Semi-Supervised Contrastive Learning for Cross-Subject EEG Emotion Recognition." *IEEE Journal of Biomedical and Health Informatics*（**在审 / Under Review**）。框架 **Neuro-SSCL**。
-- Xiao Wu, Weixiang Gao, **Xiaoqi Luo（第三作者）**, Zhengnan Zhang, Yunyuan Gao. "Attention-Guided Low-Rank Tensor Decomposition for Feature Analysis of MI-EEG Signals." *IEEE Transactions on Emerging Topics in Computational Intelligence*（**在审 / Under Review**）。框架 **AG-LRTD**。
+- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Xu Shao, Yanhua Qin. "Progressive Cross-Modal Attention Network for Brain–Computer Interface Decoding Using EEG and fNIRS." *Applied Soft Computing*, **199C (2026) 115318**（IF≈6.6 · JCR Q1 · 中科院计算机 2区 TOP）。2026-04-24 接收，2026-06-05 online。[doi:10.1016/j.asoc.2026.115318](https://doi.org/10.1016/j.asoc.2026.115318)。框架 **PCMAN**。
+- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Jiangwen Lu, Yingchun Zhang, Ruyue Huang. "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG–fNIRS Emotion Regression." *IEEE Transactions on Affective Computing*（IF≈9.8 · JCR Q1 · 中科院计算机 1区 TOP；**大修已返修 / Under Review, R1**）。框架 **PhysioSync**。
+- Jiangwen Lu, **Xiaoqi Luo（第二作者）**, Weixiang Gao, Ruyue Huang, Yunyuan Gao. "Neuro-SSCL: A Neuro-Aware Semi-Supervised Contrastive Learning for Cross-Subject EEG Emotion Recognition." *IEEE Journal of Biomedical and Health Informatics*（IF≈6.8 · JCR Q1 · 中科院医学 2区；**在审 / Under Review**）。框架 **Neuro-SSCL**。
+- Xiao Wu, Weixiang Gao, **Xiaoqi Luo（第三作者）**, Zhengnan Zhang, Yunyuan Gao. "Attention-Guided Low-Rank Tensor Decomposition for Feature Analysis of MI-EEG Signals." *IEEE Transactions on Emerging Topics in Computational Intelligence*（IF≈6.5 · JCR Q1 · 中科院计算机 2区；**在审 / Under Review**）。框架 **AG-LRTD**。
 
 ---
 
