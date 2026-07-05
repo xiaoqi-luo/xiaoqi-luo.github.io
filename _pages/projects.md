@@ -2,7 +2,7 @@
 layout: page
 title: 项目
 permalink: /projects/
-description: VLA 基座模型、具身机器人学习与脑机接口方向的实习与项目。
+description: 具身智能（VLA 基座模型 / 灵巧手 / 人形 loco-manipulation）与脑机接口方向的实习与研究项目。
 nav: true
 nav_order: 2
 display_categories: [工作, 研究]
