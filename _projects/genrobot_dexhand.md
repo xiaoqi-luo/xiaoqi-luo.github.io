@@ -50,6 +50,16 @@ related_publications: false
 </div>
 <div class="caption">左：动捕（mocap）驱动的遥操；右：Dex 外骨骼遥操作实机演示。</div>
 
+### 动捕数据采集与处理
+搭建动捕（mocap）数据的采集与处理流程：多源动捕/手部关键点采集、时空对齐与坐标系变换、重定向到机械手关节轨迹，产出可用于模仿/强化学习的高质量演示数据。
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_mocap_pipeline.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">动捕数据采集与处理 · 手部动作重定向到灵巧手的采集流程演示。</div>
+
 ## 密集接触任务 Retarget + RL Sim-to-Real
 针对**转笔**等密集接触的手内操作任务：
 
