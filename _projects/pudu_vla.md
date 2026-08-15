@@ -3,6 +3,9 @@ layout: page
 title: 普渡机器人 — VLA 基座模型
 description: VLA 基座模型复现、自研本体适配、评测、推理加速与人在环真机 RL 后训练（RFT）
 img: assets/img/logo_pudu.png
+brand_label: 普渡机器人
+brand_accent: "#1677FF"
+brand_tint: "#E5F6FF"
 importance: 3
 category: 工作
 related_publications: false

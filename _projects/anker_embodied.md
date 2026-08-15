@@ -3,6 +3,9 @@ layout: page
 title: 安克创新 — 具身闭环
 description: 四足 VLA 部署、多模态数据产线、遥操作采集与 VLM 自动标注
 img: assets/img/logo_anker.png
+brand_label: 安克创新
+brand_accent: "#00A7C8"
+brand_tint: "#E7FAF6"
 importance: 4
 category: 工作
 related_publications: false

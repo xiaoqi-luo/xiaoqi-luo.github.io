@@ -3,6 +3,9 @@ layout: page
 title: 宇树科技 — G1 人形 Loco-Manipulation
 description: G1 人形 loco-manipulation · 人在环强化学习（HIL-RL）思路 + 全身遥操作数据采集系统（XR/PICO + WBC + 灵巧手 + MCAP）
 img: assets/img/logo_unitree.png
+brand_label: 宇树科技
+brand_accent: "#17191C"
+brand_tint: "#F2F0ED"
 importance: 2
 category: 工作
 related_publications: false

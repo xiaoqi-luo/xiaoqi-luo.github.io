@@ -1,8 +1,11 @@
 ---
 layout: page
-title: 简智新创（Genrobot.ai）— 灵巧手算法
+title: 简智新创 — 灵巧手算法
 description: 自研 Dex 遥操 / 控制适配（DexPilot / Key-Objectives / Topo Retarget + SDK）与密集接触手内操作的 RL Sim-to-Real
 img: assets/img/logo_genrobot.png
+brand_label: 简智新创
+brand_accent: "#5B84E8"
+brand_tint: "#EEF1FF"
 importance: 1
 category: 工作
 related_publications: false
@@ -89,3 +92,9 @@ related_publications: false
   </div>
 </div>
 <div class="caption">基于 pi0.5 的 SFT 策略实机演示。</div>
+
+<span id="exofactor"></span>
+
+## ExoFactor：异构手部外骨骼标定（ICRA-27 在写）
+
+在研方向：拟将不同外骨骼的 **URDF、编码器、机械闭环与耦合关系**编译为统一的类型化人机因子图，并仅估计由当前设备拓扑可靠观测的 **MANO 姿态子空间**，以提升异构外骨骼标定与迁移的可解释性。方法实现与实验验证仍在推进中。

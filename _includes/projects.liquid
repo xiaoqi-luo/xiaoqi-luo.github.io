@@ -1,0 +1,70 @@
+{% if project.brand_accent %}
+  <div class="col">
+    <a
+      class="project-brand-link"
+      href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}"
+      aria-label="查看项目：{{ project.title }}"
+    >
+      <article
+        class="card h-100 hoverable project-brand-card"
+        style="--brand-accent: {{ project.brand_accent }}; --brand-tint: {{ project.brand_tint }};"
+      >
+        {% if project.img %}
+          <div class="project-brand-logo-panel">
+            <img
+              src="{{ project.img | relative_url }}"
+              class="project-brand-logo"
+              alt="{{ project.brand_label | default: project.title }} Logo"
+              loading="eager"
+            >
+          </div>
+        {% endif %}
+        <div class="card-body project-brand-body">
+          <span class="project-brand-kicker">{{ project.brand_label | default: project.category }}</span>
+          <h2 class="card-title">{{ project.title }}</h2>
+          <p class="card-text">{{ project.description }}</p>
+          <div class="project-brand-footer">
+            <span>{{ project.category }}</span>
+            <span class="project-brand-cta">查看项目 <span aria-hidden="true">↗</span></span>
+          </div>
+        </div>
+      </article>
+    </a>
+  </div>
+{% else %}
+  <div class="col">
+    <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+      <div class="card h-100 hoverable">
+        {% if project.img %}
+          {%
+            include figure.liquid
+            loading="eager"
+            path=project.img
+            sizes = "250px"
+            alt="project thumbnail"
+            class="card-img-top"
+          %}
+        {% endif %}
+        <div class="card-body">
+          <h2 class="card-title">{{ project.title }}</h2>
+          <p class="card-text">{{ project.description }}</p>
+          <div class="row ml-1 mr-1 p-0">
+            {% if project.github %}
+              <div class="github-icon">
+                <div class="icon" data-toggle="tooltip" title="Code Repository">
+                  <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+                </div>
+                {% if project.github_stars %}
+                  <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                    <i class="fa-solid fa-star"></i>
+                    <span id="{{ project.github_stars }}-stars"></span>
+                  </span>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+{% endif %}
