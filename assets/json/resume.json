@@ -1,221 +1,186 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Xiaoqi Luo",
+    "label": "M.Eng. Candidate in Control Engineering · Embodied AI & BCI",
     "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "2496998324@qq.com",
+    "phone": "+86 132 3796 1369",
+    "url": "https://xiaoqi-luo.github.io",
+    "summary": "Master's student at Hangzhou Dianzi University working on embodied AI, multimodal time-series learning, and brain-computer interfaces.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Hangzhou",
+      "countryCode": "CN",
+      "region": "Zhejiang"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "xiaoqi-luo",
+        "url": "https://github.com/xiaoqi-luo"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "name": "Genrobot.ai",
+      "position": "Dexterous Hand Algorithm Intern",
+      "location": "China",
+      "startDate": "2026-06-01",
+      "endDate": "2026-09-01",
+      "summary": "Worked on heterogeneous hand-exoskeleton retargeting, hand-arm teleoperation, cross-embodiment replay, and contact-rich in-hand manipulation Sim-to-Real.",
+      "highlights": [
+        "Developed HKT geometry-conditioned cross-attention for calibration-efficient retargeting across heterogeneous hand exoskeletons.",
+        "Built Ego-SMPL replay adapters for Tianji-Wuji and Unitree G1/SONIC, and MANUS+VIVE hand-arm teleoperation using relative SE(3), One-Euro filtering, and Marvin SDK IK."
+      ]
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "name": "Unitree Robotics",
+      "position": "Humanoid Algorithm Intern",
+      "location": "China",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-01",
+      "summary": "Designed a human-in-the-loop post-training approach for G1 loco-manipulation.",
+      "highlights": [
+        "Separated autonomous rollout, corrective intervention, and recovery trajectories to identify high-value actions for VLA post-training."
+      ]
     },
     {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Pudu Robotics",
+      "position": "VLA Algorithm Intern",
+      "location": "China",
+      "startDate": "2026-03-01",
+      "endDate": "2026-06-01",
+      "summary": "Worked on VLA embodiment adaptation, evaluation, real-robot reinforcement learning, and inference acceleration.",
+      "highlights": [
+        "Reproduced and deployed GR00T-N1.5; built SFT, offline-RL, and online-RL workflows for wheeled dual-arm manipulation."
+      ]
     },
     {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Anker Innovations",
+      "position": "Embodied Closed-Loop Algorithm Intern",
+      "location": "China",
+      "startDate": "2025-10-01",
+      "endDate": "2026-03-01",
+      "summary": "Worked on VLA evaluation, multimodal robot-data pipelines, and real-robot deployment.",
+      "highlights": [
+        "Built data-quality evaluation and asynchronous multimodal data processing pipelines; deployed InternVLA-N1 to Unitree Go2."
+      ]
     },
     {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Westlake University CenBRAIN Lab",
+      "position": "Algorithm Intern",
+      "location": "Hangzhou, China",
+      "startDate": "2025-06-01",
+      "endDate": "2025-09-01",
+      "summary": "Worked on invasive BCI speech decoding from sEEG.",
+      "highlights": [
+        "Built a Chinese sentence reconstruction pipeline using initial, final, and tone decoding with Beam Search and LLM reranking."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
-      "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
+      "institution": "Hangzhou Dianzi University",
+      "location": "Hangzhou, China",
+      "url": "https://www.hdu.edu.cn/",
+      "area": "Control Engineering",
+      "studyType": "M.Eng.",
+      "startDate": "2024-09-01",
+      "endDate": "present",
+      "score": "GPA: 4.05/4.5",
+      "highlights": [
+        "Automation (Artificial Intelligence) School; advisor: Prof. Yunyuan Gao."
+      ]
     },
     {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
-      "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    },
-    {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
-      "summary": ""
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
+      "institution": "East China Jiaotong University",
+      "location": "Nanchang, China",
+      "area": "Automation",
+      "studyType": "B.Eng.",
+      "startDate": "2020-09-01",
+      "endDate": "2024-06-01",
+      "score": "GPA: 3.34/4.0 (top 30%)",
+      "highlights": [
+        "Received multiple academic scholarships."
+      ]
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "NeuralIntent: Bridging Noninvasive EEG and Embodied Foundation Models with Continuous Neural Intent Tokens",
+      "publisher": "AAAI 2027 (Under Review)",
+      "releaseDate": "2026-08-01",
+      "url": "https://openreview.net/forum?id=HD4GoLhMkq",
+      "summary": "First author. Introduces continuous neural intent tokens and EIG-Bench."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Progressive Cross-Modal Attention Network for BCI Decoding Using EEG and fNIRS",
+      "publisher": "Applied Soft Computing, 199C (2026) 115318",
+      "releaseDate": "2026-06-05",
+      "url": "https://doi.org/10.1016/j.asoc.2026.115318",
+      "summary": "Second author; published."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
-    },
-    {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG-fNIRS Emotion Regression",
+      "publisher": "IEEE Transactions on Affective Computing (Minor Revision Returned, Under Review)",
+      "releaseDate": "2026-08-01",
+      "url": "",
+      "summary": "Second author. PhysioSync framework."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "ExoFactor / HKT",
+      "summary": "Geometry-conditioned cross-attention for calibration-efficient retargeting of heterogeneous hand exoskeletons.",
+      "highlights": [
+        "FK to topology-independent geometry tokens to Hand21 and dexterous-hand mapping."
+      ],
+      "startDate": "2026-06-01",
+      "endDate": "present"
+    },
+    {
+      "name": "Ego Motion Cross-Embodiment Replay",
+      "summary": "Unified SMPL and Hand21 motion replay for Tianji-Wuji and Unitree G1/SONIC.",
+      "highlights": [
+        "Offline synchronized replay on a shared timeline; real-time streaming is the next step."
+      ],
+      "startDate": "2026-08-01",
+      "endDate": "present"
+    },
+    {
+      "name": "MANUS + VIVE Hand-Arm Teleoperation",
+      "summary": "Decoupled hand and arm teleoperation for Wuji Hand2 and Tianji arm.",
+      "highlights": [
+        "Relative SE(3), One-Euro filtering, explicit zero capture, and Tianji Marvin SDK IK."
+      ],
+      "startDate": "2026-08-01",
+      "endDate": "present"
     }
-  ]
+  ],
+  "skills": [
+    {
+      "name": "Embodied AI / VLA",
+      "level": "Advanced",
+      "keywords": ["GR00T", "pi0.5", "OpenPI", "LeRobot", "LIBERO", "PPO", "SFT", "offline/online RL"]
+    },
+    {
+      "name": "Robotics / Teleoperation",
+      "level": "Advanced",
+      "keywords": ["ROS2", "Isaac Lab", "MuJoCo", "SE(3) retargeting", "MANUS", "VIVE/SteamVR", "One-Euro filter", "Marvin SDK IK"]
+    },
+    {
+      "name": "Inference / Data Infrastructure",
+      "level": "Advanced",
+      "keywords": ["PyTorch", "ONNX", "CUDA Graph", "vLLM", "FastAPI", "MCAP", "WebDataset", "Docker", "Kubernetes", "PostgreSQL"]
+    }
+  ],
+  "languages": [
+    { "language": "Chinese", "fluency": "Native" },
+    { "language": "English", "fluency": "Professional working proficiency" }
+  ],
+  "awards": [],
+  "certificates": [],
+  "volunteer": [],
+  "interests": [],
+  "references": []
 }

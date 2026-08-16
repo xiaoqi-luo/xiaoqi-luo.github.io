@@ -26,8 +26,8 @@ toc:
 ### 杭州电子科技大学 — 硕士研究生 ｜ 2024.09 – 至今
 自动化（人工智能）学院 · 控制工程 ｜ **GPA 4.05/4.5** ｜ 导师：**高云园 教授**
 
-- 研究方向：多模态时序信号建模与解码。
-- 以第一作者向 *AAAI-27* 投稿 NeuralIntent；在 *Applied Soft Computing*（IF≈7.8 · JCR Q1 · 中科院计算机 2区 TOP，第二作者（导师一作））发表一篇；另参与五篇在审论文，包括 *AAAI-27*、*IEEE T-AFFC*、*Journal of Neural Engineering*、*IEEE JBHI* 与 *IEEE TETCI*。
+- 研究方向：多模态时序信号建模与解码、视觉—语言—动作模型及具身智能。
+- 已发表 SCI 论文 1 篇；以第一作者投稿 *AAAI-27* 的 NeuralIntent，另有 *IEEE Transactions on Affective Computing* 小修返修在审，以及 ExoFactor（ICRA-27）在写。
 
 ### 华东交通大学 — 工学学士 ｜ 2020.09 – 2024.06
 电气与自动化工程学院 · 自动化 ｜ **GPA 3.34/4.0（专业前 30%）**
@@ -39,18 +39,20 @@ toc:
 ## 实习经历
 
 ### 简智新创（Genrobot.ai）— 灵巧手算法实习生 ｜ 2026.06 – 2026.09
-围绕灵巧手遥操作 Retarget 与接触式手内操作的 RL Sim-to-Real 开展工作。
+围绕灵巧手遥操作、异构运动重定向、跨本体动作回放与密集接触手内操作的 RL Sim-to-Real 开展工作。
 
-- **Dex 外骨骼遥操作 Retarget**：基于 DexPilot 算法改进实时 retarget 框架，在机器人手可执行约束下自适应选择整体手型、指尖相对关系、指尖方向、掌心姿态、关节正则与速度平滑等关键目标，实现 Dex 外骨骼 / 动捕 / 视觉输入到 Wuji Hand2 20-DoF 关节轨迹的稳定映射。
-- **接触 Retarget + RL Sim-to-Real**：针对转笔等存在物体接触的手内操作任务，保持人手-物体的任务相关接触拓扑，生成带物体位姿与手部 21 keypoint 的 reference 轨迹；在 Isaac Lab 中通过 reference-state initialization、residual joint-position action 与 PPO 训练 tracking policy，最终迁移到真机完成转笔任务。
+- **ExoFactor / HKT 异构外骨骼重定向**：将异构外骨骼 FK 编译为拓扑无关的几何 Token，以几何条件化跨注意力学习“外骨骼—21 keypoints—灵巧手”通用映射，支持少样本快速标定与高精度遥操作。
+- **接触保持 Retarget + RL Sim-to-Real**：针对转笔等密集接触任务保持手—物接触拓扑，生成物体位姿与 Hand21 参考轨迹；在 Isaac Lab 中以 reference-state initialization、residual joint-position action 与 PPO 训练 tracking policy，完成 Wuji Hand2 迁移验证；并在 Revo3 上完成 HORA 两阶段策略的真机手内转球部署。
+- **Ego 动作跨本体回放**：将 Ego 输出的 SMPL 骨架与 Hand21 统一映射至 Tianji–Wuji 与 Unitree G1（SONIC）等异构本体，实现统一时间轴的离线同步回放；后续推进实时流式回放。
+- **MANUS+VIVE 手—臂协同遥操作**：以 MANUS 驱动 Wuji Hand2，双 VIVE Tracker 经相对 SE(3)、零点 1:1 映射与 One-Euro 滤波驱动 Tianji 左臂；接入 Marvin SDK IK 实现协同真机遥操作。
 
-### 宇树科技 — 算法实习生 ｜ 2026.06（约一周）
+### 宇树科技 — 人形算法实习生 ｜ 2026.06（约一周）
 基于 **G1 人形机器人**的 **loco-manipulation**（移动-操作一体）开展**人在环强化学习（HIL-RL）**：协同下半身运动控制与上半身抓取，通过人在环迭代提升策略在真机上的稳定性与任务成功率。
 
 ### 普渡机器人 — VLA 算法实习生 ｜ 2026.03 – 2026.06
 为自研轮式双臂机器人开展视觉-语言-动作基座模型的复现、适配、评测、推理加速与强化学习后训练。
 
-- **模型复现与本体适配**：复现 GR00T-N1、DM0，基于自研轮式双臂本体的搬箱子和生产任务数据 SFT，适配动作表征与 infer config，并记录训练踩坑与效果归因。
+- **模型复现与本体适配**：复现并部署 GR00T-N1.5，面向自研轮式双臂平台的搬箱任务完成数据 SFT、动作空间适配与推理配置开发。
 - **自研基模 RoboChallenge 评测**：打通官方评测链路，部署自研基模 HTTP 推理服务、ClientAPI 对接与本地 Mock 闭环，实现 20 维模型动作到 Franka 控制接口的映射，在 Table 30 上微调。
 - **推理速度优化**：参考 Realtime-VLA，用 CUDA Graph 消除 CPU 调度开销，客户端预 resize、图像编解码 WebP95→JPEG90、通信 WebSocket→ZMQ，端到端单轮推理时延降低约 50ms。
 - **RL 后训练**：在 FlowerVLA SFT 权重后接 ConRFT 强化学习微调，设计 HIL 人在环路（SFT→离线 RL→在线 RL）流程，结合 BC 与 Q-learning 双重 loss、人类干预与稀疏奖励，构建 reward model 与真机 rollout 评测闭环，显著提升抓取/推动任务成功率与错误恢复能力。
@@ -63,7 +65,7 @@ toc:
 - **机械臂数据采集**：搭建 UMI 与 teleop 数据采集 pipeline，覆盖局域网组网、NTP 时钟同步、站点接收上传、rerun 回放、多模态对齐与 WebDataset/lerobot 格式转换；调研数据质量评估方法，设计 5 维端侧质量规则校验与云端湖仓打分算法。
 - **VLM 预标注与工具链**：搭建基于 Qwen-VL 与 GroundingDINO 的视频理解数据生产链路，通过 vLLM 高并发推理、多机并行与队列负载均衡，将端到端生产吞吐提升约 30%。
 
-### 西湖大学 CenBRAIN 实验室 — 算法工程师实习生 ｜ 2025.06 – 2025.09
+### 西湖大学 CenBRAIN 实验室 — 算法实习生 ｜ 2025.06 – 2025.09
 侵入式脑机接口语音解码。
 
 - 搭建临床 sEEG 数据采集与预处理流水线：低通滤波、工频陷波、下采样、通道选择与差分参考；基于 MFA、pyPinyin 与 IPA 映射生成字级时间边界及声母/韵母/声调标签。
@@ -75,7 +77,7 @@ toc:
 
 - **Xiaoqi Luo（第一作者）**, Weixiang Gao, Zhengnan Zhang, Taojie Xu, Mo Zhou, Xun Shi, Yunyuan Gao. "[NeuralIntent: Bridging Noninvasive EEG and Embodied Foundation Models with Continuous Neural Intent Tokens](https://openreview.net/forum?id=HD4GoLhMkq)." *The Forty-First AAAI Conference on Artificial Intelligence (AAAI-27)*（**投稿在审 / Under Review**，Submission 37074）。框架 **NeuralIntent**；基准 **EIG-Bench**。
 - [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Xu Shao, Yanhua Qin. "Progressive Cross-Modal Attention Network for Brain–Computer Interface Decoding Using EEG and fNIRS." *Applied Soft Computing*, **199C (2026) 115318**（IF≈7.8 · JCR Q1 · 中科院计算机 2区 TOP）。2026-04-24 接收，2026-06-05 online。[doi:10.1016/j.asoc.2026.115318](https://doi.org/10.1016/j.asoc.2026.115318)。框架 **PCMAN**。
-- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Jiangwen Lu, Yingchun Zhang, Ruyue Huang. "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG–fNIRS Emotion Regression." *IEEE Transactions on Affective Computing*（IF≈9.8 · JCR Q1 · 中科院计算机 1区 TOP；**小修中 / Under Review, Minor Revision**）。框架 **PhysioSync**。
+- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Jiangwen Lu, Yingchun Zhang, Ruyue Huang. "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG–fNIRS Emotion Regression." *IEEE Transactions on Affective Computing*（IF≈9.8 · JCR Q1 · 中科院计算机 1区 TOP；**小修返修，在审 / Under Review, Minor Revision Returned**）。框架 **PhysioSync**。
 - Zheng Hu, **Xiaoqi Luo（第二作者）**, Xu Shao, [Yunyuan Gao（高云园，导师；通讯作者）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), Yanhua Qin. "PSSF: A Phase-Space and State-Space Fusion Method for EEG Source Localization and Feature Decoding." *Journal of Neural Engineering*（IF≈4.0 · JCR Q2；**在审 / Under Review**，JNE-111255）。框架 **PSSF**。
 - Jiangwen Lu, **Xiaoqi Luo（第二作者）**, Weixiang Gao, Ruyue Huang, Yunyuan Gao. "Neuro-SSCL: A Neuro-Aware Semi-Supervised Contrastive Learning for Cross-Subject EEG Emotion Recognition." *IEEE Journal of Biomedical and Health Informatics*（IF≈6.8 · JCR Q1 · 中科院医学 2区 TOP；**在审 / Under Review**）。框架 **Neuro-SSCL**。
 - Xiao Wu, Weixiang Gao, **Xiaoqi Luo（第三作者）**, Zhengnan Zhang, Yunyuan Gao. "Attention-Guided Low-Rank Tensor Decomposition for Feature Analysis of MI-EEG Signals." *IEEE Transactions on Emerging Topics in Computational Intelligence*（IF≈6.5 · JCR Q1 · 中科院计算机 2区；**在审 / Under Review**）。框架 **AG-LRTD**。
@@ -94,9 +96,10 @@ toc:
 
 ## 技术能力
 
-- **编程 / 机器学习**：Python, PyTorch, NumPy, OpenCV
-- **机器人 / VLA**：ROS2, LeRobot, OpenPI, Rerun, Isaac Lab, MuJoCo, RViz2, LIBERO
-- **数据 / 系统**：MCAP, WebDataset, Parquet, Docker, FastAPI, Redis, PostgreSQL, Git, CI/CD
+- **Embodied AI / VLA**：GR00T, π0.5, OpenPI, LeRobot, LIBERO, PPO；具备 SFT、离线/在线 RL、人类在环训练、价值评估与奖励建模经验。
+- **Robotics / Teleoperation**：ROS2, Isaac Lab, MuJoCo, SE(3) 重定向、One-Euro 滤波、Tianji Marvin SDK IK；具备 MANUS、VIVE/SteamVR、灵巧手与外骨骼的手—臂协同遥操作及 Sim-to-Real 经验。
+- **Inference / Deployment**：Python, PyTorch, OpenCV, ONNX, CUDA Graph, vLLM, FastAPI；具备模型服务化、Client/Server 部署、ROS2 控制与实时推理优化经验。
+- **Data / Infrastructure**：MCAP, WebDataset, Parquet, Rerun, Docker, Kubernetes, Redis, PostgreSQL, Git/CI/CD；具备多模态数据对齐、轨迹回放与异步流水线建设经验。
 
 ---
 

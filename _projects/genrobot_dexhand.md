@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 简智新创 — 灵巧手与具身动作算法
-description: HKT 异构外骨骼重定向、Ego-SMPL 跨本体回放、Dex 遥操与 HORA 手内转球 Sim-to-Real
+description: HKT 异构重定向、Dex 遥操、Ego-SMPL 跨本体回放、MANUS+VIVE 手—臂遥操作与 HORA Sim-to-Real
 img: assets/img/logo_genrobot.png
 brand_label: 简智新创
 brand_accent: "#5B84E8"

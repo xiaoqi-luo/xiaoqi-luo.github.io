@@ -1,14 +1,14 @@
 ---
 layout: page
 title: EEG–fNIRS 多模态脑信号解码
-description: 硕士主研方向 · EEG–fNIRS 多模态解码（PCMAN 已发表 / PhysioSync 小修中）
+description: 硕士主研方向 · EEG–fNIRS 多模态解码（PCMAN 已发表 / PhysioSync 小修返修在审）
 img: assets/img/research_pcman.png
 importance: 0
 category: 研究
 related_publications: true
 ---
 
-我的硕士主研方向是 **EEG–fNIRS 混合脑机接口的多模态解码**：EEG 具有毫秒级时间分辨率但空间定位有限，fNIRS 空间分辨率更好但存在数秒的血流动力学延迟。二者互补，但直接融合常因**电生理信号与血流动力学信号之间的时空异质性**而失效。围绕这一问题，我作为**第二作者（导师一作）**参与两项工作：一篇已发表于 *Applied Soft Computing*（IF≈7.8），另一篇投稿 *IEEE Transactions on Affective Computing*（小修中）。
+我的硕士主研方向是 **EEG–fNIRS 混合脑机接口的多模态解码**：EEG 具有毫秒级时间分辨率但空间定位有限，fNIRS 空间分辨率更好但存在数秒的血流动力学延迟。二者互补，但直接融合常因**电生理信号与血流动力学信号之间的时空异质性**而失效。围绕这一问题，我作为**第二作者（导师一作）**参与两项工作：一篇已发表于 *Applied Soft Computing*（IF≈7.8），另一篇投稿 *IEEE Transactions on Affective Computing*（小修返修，在审）。
 
 ---
 
@@ -41,7 +41,7 @@ related_publications: true
 
 ---
 
-## 工作二：PhysioSync — 神经血管对齐与可靠性感知融合（投稿 IEEE T-AFFC · 小修中）
+## 工作二：PhysioSync — 神经血管对齐与可靠性感知融合（投稿 IEEE T-AFFC · 小修返修在审）
 
 面向**连续情绪回归**（闭环情感脑机接口场景），提出 **PhysioSync**：在多模态融合之前，先做 HRF 式时间对齐与残差感知的可靠性控制。
 
