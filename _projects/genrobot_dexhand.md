@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 简智新创 — 灵巧手算法
-description: HKT 异构外骨骼重定向、Dex 遥操与 HORA 手内转球 Sim-to-Real
+title: 简智新创 — 灵巧手与具身动作算法
+description: HKT 异构外骨骼重定向、Ego-SMPL 跨本体回放、Dex 遥操与 HORA 手内转球 Sim-to-Real
 img: assets/img/logo_genrobot.png
 brand_label: 简智新创
 brand_accent: "#5B84E8"
@@ -67,7 +67,7 @@ related_publications: false
   }
 </style>
 
-2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦三条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**，以及**密集接触手内操作的 RL Sim-to-Real**。
+2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦四条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**、**Ego-SMPL 跨本体动作回放**，以及**密集接触手内操作的 RL Sim-to-Real**。
 
 <span id="exofactor"></span>
 
@@ -145,6 +145,44 @@ related_publications: false
 </div>
 <div class="caption">动捕数据采集与处理 · 手部动作重定向到灵巧手的采集流程演示。</div>
 
+<span id="cross-embodiment"></span>
+
+## Ego Motion → Cross-Embodiment Replay
+
+<div class="genrobot-method-note">
+  <span class="genrobot-method-kicker">Method 02 · Unified SMPL Motion Replay</span>
+  <p>以 Ego 数据输出的 <strong>SMPL 全身骨架与 Hand21 手部轨迹</strong>作为统一动作表示，使用固定会话坐标变换和相对根节点表征，避免逐帧刚体拟合带来的抖动与尺度漂移；再通过本体适配器将同一段动作分别映射至 <strong>Tianji + Wuji</strong> 与 <strong>Unitree G1</strong>。</p>
+  <div class="genrobot-pipeline" aria-label="跨本体动作回放流程">
+    <span>Ego MCAP</span><b>→</b><span>SMPL + Hand21</span><b>→</b><span>本体适配器</span><b>→</b><span>Tianji + Wuji</span><b>↔</b><span>Unitree G1 / SONIC</span>
+  </div>
+</div>
+
+- **Tianji + Wuji**：将上肢运动与 Hand21 分别适配至 Tianji 双臂与 Wuji Hand2 的关节空间；
+- **Unitree G1 / SONIC**：将 SMPL-22 扩展为 SMPL-24，并生成 6 维腕部参考，通过 ZMQ Mode-2 接入官方 GEAR-SONIC 编码器/解码器，输出 G1 29-DoF 动作；
+- **同步验证**：在统一的 50 Hz 时间轴下并排回放两套本体轨迹，完成 4,272 帧（85.42 s）离线闭环验证；ONNX 推理 P95 为 8.82 ms。
+
+<div class="row justify-content-center">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_ego_tianji_wuji_real.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_ego_g1_sonic_real.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">左：Tianji + Wuji 实体平台；右：Ego 动作驱动的 Unitree G1 SONIC 实机演示。</div>
+
+<div class="row justify-content-center">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_cross_embodiment_mujoco.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_ego_multiview_replay.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">左：Tianji + Wuji 与 G1 的 MuJoCo 同步回放；右：Ego 多视角轨迹复核与动作回放。</div>
+
+<p><strong>当前状态：</strong>离线、统一时间轴的多本体动作回放。<strong>下一步：</strong>将离线轨迹链路改造为实时流式回放，使同一 Ego 动作可低延时驱动多种具身本体。</p>
+
 ## 密集接触任务 Retarget + RL Sim-to-Real
 
 针对**转笔**等密集接触的手内操作任务：
@@ -156,7 +194,7 @@ related_publications: false
 ### Revo3 右手 · HORA 转球（Sim-to-Real）
 
 <div class="genrobot-method-note">
-  <span class="genrobot-method-kicker">Method 02 · HORA Sim-to-Real</span>
+  <span class="genrobot-method-kicker">Method 03 · HORA Sim-to-Real</span>
   <p>搭建“<strong>Stage 1 特权信息条件化 PPO</strong> + <strong>Stage 2 ProprioAdapt 时序蒸馏</strong>”两阶段训练链路。Stage 1 在质量、摩擦、质心与 PD 响应随机化下学习条件控制策略；Stage 2 冻结 Actor，以本体历史预测动力学隐变量。</p>
   <p>针对无触觉 Revo3 真机定位并消除 <strong>contact observation mismatch</strong>，统一训练、ONNX 导出与真机部署的关节位置—目标历史输入；Stage 2 潜变量 MSE 由 <strong>0.47</strong> 收敛至 <strong>0.04–0.05</strong>，完成 Revo3 右手闭环部署与转球验证。</p>
   <div class="genrobot-pipeline" aria-label="HORA 训练与部署流程">
