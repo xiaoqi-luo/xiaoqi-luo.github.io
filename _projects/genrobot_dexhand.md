@@ -67,7 +67,7 @@ related_publications: false
   }
 </style>
 
-2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦四条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**、**Ego-SMPL 跨本体动作回放**，以及**密集接触手内操作的 RL Sim-to-Real**。
+2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦五条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**、**Ego-SMPL 跨本体动作回放**、**MANUS+VIVE 手—臂协同遥操作**，以及**密集接触手内操作的 RL Sim-to-Real**。
 
 <span id="exofactor"></span>
 
@@ -183,6 +183,29 @@ related_publications: false
 
 <p><strong>当前状态：</strong>离线、统一时间轴的多本体动作回放。<strong>下一步：</strong>将离线轨迹链路改造为实时流式回放，使同一 Ego 动作可低延时驱动多种具身本体。</p>
 
+<span id="manus-vive-teleop"></span>
+
+## MANUS + VIVE：手—臂协同真机遥操作
+
+<div class="genrobot-method-note">
+  <span class="genrobot-method-kicker">Method 03 · SE(3)-Referenced Hand–Arm Teleoperation</span>
+  <p>构建手指与手臂<strong>解耦</strong>的双链路遥操作：MANUS 左手骨架经 Hand21 与 Wuji retargeting 驱动 <strong>Wuji Hand2</strong>；中心与左腕双 VIVE Tracker 以 <strong>90 Hz 相对 SE(3)</strong> 消除 SteamVR 世界坐标漂移，经 One-Euro 滤波、安装外参与手动零点的 <strong>1:1 末端映射</strong>驱动 <strong>Tianji 左臂</strong>。</p>
+  <div class="genrobot-pipeline" aria-label="MANUS 与 VIVE 手臂协同遥操作流程">
+    <span>MANUS Skeleton</span><b>→</b><span>Hand21</span><b>→</b><span>Wuji Hand2</span><b>｜</b><span>Dual VIVE SE(3)</span><b>→</b><span>Marvin IK</span><b>→</b><span>Tianji Arm</span>
+  </div>
+</div>
+
+- **稳定控制语义**：仅在操作者显式捕获零点后开始手臂跟随；Tracker 短时失效、IK 无解或仿真重启均不会静默重置人机对应关系；
+- **单一生产运动学链**：采用 Tianji Marvin SDK IK，以当前实测关节保持解的连续性；HL-IK 仅保留为历史实验资产，避免双重 IK 和冗余限幅带来的尾延迟；
+- **可诊断、可维护**：手、臂和仿真独立启停，完整记录 90 Hz Tracker、映射目标、IK 输出与实机反馈，便于逐层定位不跟手、漂移与可达域问题。
+
+<div class="row justify-content-center">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_manus_vive_tianji_wuji_teleop.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">MANUS 左手与双 VIVE Tracker 协同驱动 Wuji Hand2 和 Tianji 左臂的实机演示。</div>
+
 ## 密集接触任务 Retarget + RL Sim-to-Real
 
 针对**转笔**等密集接触的手内操作任务：
@@ -194,7 +217,7 @@ related_publications: false
 ### Revo3 右手 · HORA 转球（Sim-to-Real）
 
 <div class="genrobot-method-note">
-  <span class="genrobot-method-kicker">Method 03 · HORA Sim-to-Real</span>
+  <span class="genrobot-method-kicker">Method 04 · HORA Sim-to-Real</span>
   <p>搭建“<strong>Stage 1 特权信息条件化 PPO</strong> + <strong>Stage 2 ProprioAdapt 时序蒸馏</strong>”两阶段训练链路。Stage 1 在质量、摩擦、质心与 PD 响应随机化下学习条件控制策略；Stage 2 冻结 Actor，以本体历史预测动力学隐变量。</p>
   <p>针对无触觉 Revo3 真机定位并消除 <strong>contact observation mismatch</strong>，统一训练、ONNX 导出与真机部署的关节位置—目标历史输入；Stage 2 潜变量 MSE 由 <strong>0.47</strong> 收敛至 <strong>0.04–0.05</strong>，完成 Revo3 右手闭环部署与转球验证。</p>
   <div class="genrobot-pipeline" aria-label="HORA 训练与部署流程">
