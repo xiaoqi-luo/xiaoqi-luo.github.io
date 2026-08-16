@@ -30,7 +30,7 @@
       "summary": "Worked on heterogeneous hand-exoskeleton retargeting, hand-arm teleoperation, cross-embodiment replay, and contact-rich in-hand manipulation Sim-to-Real.",
       "highlights": [
         "Developed HKT geometry-conditioned cross-attention for calibration-efficient retargeting across heterogeneous hand exoskeletons.",
-        "Built Ego-SMPL replay adapters for Tianji-Wuji and Unitree G1/SONIC, and MANUS+VIVE hand-arm teleoperation using relative SE(3), One-Euro filtering, and Marvin SDK IK."
+        "Built pure-vision Ego-SMPL adapters for synchronized cross-embodiment control, and MANUS+VIVE hand-arm teleoperation (≤25 ms) using relative SE(3), One-Euro filtering, and Marvin SDK IK."
       ]
     },
     {
@@ -89,7 +89,7 @@
       "endDate": "present",
       "score": "GPA: 4.05/4.5",
       "highlights": [
-        "Automation (Artificial Intelligence) School; advisor: Prof. Yunyuan Gao."
+        "Automation (Artificial Intelligence) School; advisor: Prof. Yunyuan Gao; first place in the school's men's badminton singles competition."
       ]
     },
     {
@@ -140,9 +140,9 @@
     },
     {
       "name": "Ego Motion Cross-Embodiment Replay",
-      "summary": "Unified SMPL and Hand21 motion replay for Tianji-Wuji and Unitree G1/SONIC.",
+      "summary": "Pure-vision Ego-SMPL and Hand21 synchronized control for Tianji-Wuji and Unitree G1/SONIC.",
       "highlights": [
-        "Offline synchronized replay on a shared timeline; real-time streaming is the next step."
+        "Synchronized cross-embodiment control from human first-person Ego visual input; real-time streaming is the next step."
       ],
       "startDate": "2026-08-01",
       "endDate": "present"
@@ -151,7 +151,7 @@
       "name": "MANUS + VIVE Hand-Arm Teleoperation",
       "summary": "Decoupled hand and arm teleoperation for Wuji Hand2 and Tianji arm.",
       "highlights": [
-        "Relative SE(3), One-Euro filtering, explicit zero capture, and Tianji Marvin SDK IK."
+        "Relative SE(3), One-Euro filtering, explicit zero capture, Tianji Marvin SDK IK, and end-to-end latency within 25 ms."
       ],
       "startDate": "2026-08-01",
       "endDate": "present"
@@ -161,12 +161,12 @@
     {
       "name": "Embodied AI / VLA",
       "level": "Advanced",
-      "keywords": ["GR00T", "pi0.5", "OpenPI", "LeRobot", "LIBERO", "PPO", "SFT", "offline/online RL"]
+      "keywords": ["GR00T", "pi0.5", "OpenPI", "LeRobot", "LIBERO", "PPO", "SAC", "SFT", "offline/online RL"]
     },
     {
       "name": "Robotics / Teleoperation",
       "level": "Advanced",
-      "keywords": ["ROS2", "Isaac Lab", "MuJoCo", "SE(3) retargeting", "MANUS", "VIVE/SteamVR", "One-Euro filter", "Marvin SDK IK"]
+      "keywords": ["ROS2", "Isaac Lab", "MuJoCo", "retargeting", "MANUS", "VIVE", "dexterous hands", "hand-arm teleoperation", "Sim-to-Real"]
     },
     {
       "name": "Inference / Data Infrastructure",

@@ -28,6 +28,7 @@ toc:
 
 - 研究方向：多模态时序信号建模与解码、视觉—语言—动作模型及具身智能。
 - 已发表 SCI 论文 1 篇；以第一作者投稿 *AAAI-27* 的 NeuralIntent，另有 *IEEE Transactions on Affective Computing* 小修返修在审，以及 ExoFactor（ICRA-27）在写。
+- 获学院羽毛球男子单打第一。
 
 ### 华东交通大学 — 工学学士 ｜ 2020.09 – 2024.06
 电气与自动化工程学院 · 自动化 ｜ **GPA 3.34/4.0（专业前 30%）**
@@ -43,8 +44,8 @@ toc:
 
 - **ExoFactor / HKT 异构外骨骼重定向**：将异构外骨骼 FK 编译为拓扑无关的几何 Token，以几何条件化跨注意力学习“外骨骼—21 keypoints—灵巧手”通用映射，支持少样本快速标定与高精度遥操作。
 - **接触保持 Retarget + RL Sim-to-Real**：针对转笔等密集接触任务保持手—物接触拓扑，生成物体位姿与 Hand21 参考轨迹；在 Isaac Lab 中以 reference-state initialization、residual joint-position action 与 PPO 训练 tracking policy，完成 Wuji Hand2 迁移验证；并在 Revo3 上完成 HORA 两阶段策略的真机手内转球部署。
-- **Ego 动作跨本体回放**：将 Ego 输出的 SMPL 骨架与 Hand21 统一映射至 Tianji–Wuji 与 Unitree G1（SONIC）等异构本体，实现统一时间轴的离线同步回放；后续推进实时流式回放。
-- **MANUS+VIVE 手—臂协同遥操作**：以 MANUS 驱动 Wuji Hand2，双 VIVE Tracker 经相对 SE(3)、零点 1:1 映射与 One-Euro 滤波驱动 Tianji 左臂；接入 Marvin SDK IK 实现协同真机遥操作。
+- **Ego 动作跨本体控制**：将人类第一视角 Ego 数据输出的 SMPL 骨架与 Hand21 统一重定向至 Tianji–Wuji 与 Unitree G1（SONIC）等异构本体，仅依赖 Ego 纯视觉输入完成多本体同步控制。
+- **MANUS+VIVE 手—臂协同遥操作**：以 MANUS 驱动 Wuji Hand2，双 VIVE Tracker 经相对 SE(3)、零点 1:1 映射与 One-Euro 滤波驱动 Tianji 左臂；接入 Marvin SDK IK 实现协同真机遥操作，端到端延迟控制在 **25 ms 以内**。
 
 ### 宇树科技 — 人形算法实习生 ｜ 2026.06（约一周）
 基于 **G1 人形机器人**的 **loco-manipulation**（移动-操作一体）开展**人在环强化学习（HIL-RL）**：协同下半身运动控制与上半身抓取，通过人在环迭代提升策略在真机上的稳定性与任务成功率。
@@ -96,8 +97,8 @@ toc:
 
 ## 技术能力
 
-- **Embodied AI / VLA**：GR00T, π0.5, OpenPI, LeRobot, LIBERO, PPO；具备 SFT、离线/在线 RL、人类在环训练、价值评估与奖励建模经验。
-- **Robotics / Teleoperation**：ROS2, Isaac Lab, MuJoCo, SE(3) 重定向、One-Euro 滤波、Tianji Marvin SDK IK；具备 MANUS、VIVE/SteamVR、灵巧手与外骨骼的手—臂协同遥操作及 Sim-to-Real 经验。
+- **Embodied AI / VLA**：GR00T, π0.5, OpenPI, LeRobot, LIBERO, PPO, SAC；具备 SFT、离线/在线 RL、人类在环训练、价值评估与奖励建模经验。
+- **Robotics / Teleoperation**：ROS2, Isaac Lab, MuJoCo、重定向；具备 MANUS、VIVE、灵巧手与外骨骼的手—臂协同遥操作及 Sim-to-Real 经验，覆盖 Unitree G1/Go2、Franka、Tianji、Wuji Hand2、Revo3 等本体。
 - **Inference / Deployment**：Python, PyTorch, OpenCV, ONNX, CUDA Graph, vLLM, FastAPI；具备模型服务化、Client/Server 部署、ROS2 控制与实时推理优化经验。
 - **Data / Infrastructure**：MCAP, WebDataset, Parquet, Rerun, Docker, Kubernetes, Redis, PostgreSQL, Git/CI/CD；具备多模态数据对齐、轨迹回放与异步流水线建设经验。
 

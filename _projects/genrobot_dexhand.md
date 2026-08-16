@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 简智新创 — 灵巧手与具身动作算法
-description: HKT 异构重定向、Dex 遥操、Ego-SMPL 跨本体回放、MANUS+VIVE 手—臂遥操作与 HORA Sim-to-Real
+description: HKT 异构重定向、Dex 遥操、Ego-SMPL 纯视觉跨本体控制、MANUS+VIVE 手—臂遥操作与 HORA Sim-to-Real
 img: assets/img/logo_genrobot.png
 brand_label: 简智新创
 brand_accent: "#5B84E8"
@@ -67,7 +67,7 @@ related_publications: false
   }
 </style>
 
-2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦五条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**、**Ego-SMPL 跨本体动作回放**、**MANUS+VIVE 手—臂协同遥操作**，以及**密集接触手内操作的 RL Sim-to-Real**。
+2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦五条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**、**Ego-SMPL 纯视觉跨本体控制**、**MANUS+VIVE 手—臂协同遥操作**，以及**密集接触手内操作的 RL Sim-to-Real**。
 
 <span id="exofactor"></span>
 
@@ -147,11 +147,11 @@ related_publications: false
 
 <span id="cross-embodiment"></span>
 
-## Ego Motion → Cross-Embodiment Replay
+## Ego Motion → Cross-Embodiment Control
 
 <div class="genrobot-method-note">
   <span class="genrobot-method-kicker">Method 02 · Unified SMPL Motion Replay</span>
-  <p>以 Ego 数据输出的 <strong>SMPL 全身骨架与 Hand21 手部轨迹</strong>作为统一动作表示，使用固定会话坐标变换和相对根节点表征，避免逐帧刚体拟合带来的抖动与尺度漂移；再通过本体适配器将同一段动作分别映射至 <strong>Tianji + Wuji</strong> 与 <strong>Unitree G1</strong>。</p>
+  <p>以<strong>人类第一视角 Ego 纯视觉数据</strong>输出的 <strong>SMPL 全身骨架与 Hand21 手部轨迹</strong>作为统一动作表示，使用固定会话坐标变换和相对根节点表征，避免逐帧刚体拟合带来的抖动与尺度漂移；再通过本体适配器将同一段动作分别映射至 <strong>Tianji + Wuji</strong> 与 <strong>Unitree G1</strong>。</p>
   <div class="genrobot-pipeline" aria-label="跨本体动作回放流程">
     <span>Ego MCAP</span><b>→</b><span>SMPL + Hand21</span><b>→</b><span>本体适配器</span><b>→</b><span>Tianji + Wuji</span><b>↔</b><span>Unitree G1 / SONIC</span>
   </div>
@@ -159,7 +159,7 @@ related_publications: false
 
 - **Tianji + Wuji**：将上肢运动与 Hand21 分别适配至 Tianji 双臂与 Wuji Hand2 的关节空间；
 - **Unitree G1 / SONIC**：将 SMPL-22 扩展为 SMPL-24，并生成 6 维腕部参考，通过 ZMQ Mode-2 接入官方 GEAR-SONIC 编码器/解码器，输出 G1 29-DoF 动作；
-- **同步验证**：在统一的 50 Hz 时间轴下并排回放两套本体轨迹，完成 4,272 帧（85.42 s）离线闭环验证；ONNX 推理 P95 为 8.82 ms。
+- **同步控制**：仅依赖 Ego 纯视觉输入，在统一时间轴下驱动多台异构本体；完成 4,272 帧（85.42 s）闭环验证，ONNX 推理 P95 为 8.82 ms。
 
 <div class="row justify-content-center">
   <div class="col-sm-6 mt-3 mt-md-0">
@@ -181,7 +181,7 @@ related_publications: false
 </div>
 <div class="caption">左：Tianji + Wuji 与 G1 的 MuJoCo 同步回放；右：Ego 多视角轨迹复核与动作回放。</div>
 
-<p><strong>当前状态：</strong>离线、统一时间轴的多本体动作回放。<strong>下一步：</strong>将离线轨迹链路改造为实时流式回放，使同一 Ego 动作可低延时驱动多种具身本体。</p>
+<p><strong>当前能力：</strong>仅依赖 Ego 纯视觉输入的多本体同步控制。<strong>下一步：</strong>将当前链路进一步改造为实时流式回放，使同一 Ego 动作可低延时驱动多种具身本体。</p>
 
 <span id="manus-vive-teleop"></span>
 
@@ -197,7 +197,7 @@ related_publications: false
 
 - **稳定控制语义**：仅在操作者显式捕获零点后开始手臂跟随；Tracker 短时失效、IK 无解或仿真重启均不会静默重置人机对应关系；
 - **单一生产运动学链**：采用 Tianji Marvin SDK IK，以当前实测关节保持解的连续性；HL-IK 仅保留为历史实验资产，避免双重 IK 和冗余限幅带来的尾延迟；
-- **可诊断、可维护**：手、臂和仿真独立启停，完整记录 90 Hz Tracker、映射目标、IK 输出与实机反馈，便于逐层定位不跟手、漂移与可达域问题。
+- **低延时与可诊断性**：手、臂和仿真独立启停，端到端延迟控制在 **25 ms 以内**；完整记录 90 Hz Tracker、映射目标、IK 输出与实机反馈，便于逐层定位不跟手、漂移与可达域问题。
 
 <div class="row justify-content-center">
   <div class="col-sm-6 mt-3 mt-md-0">

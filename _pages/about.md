@@ -35,7 +35,7 @@ latest_posts:
 
 此外，拥有**发明专利 3 项**：作为第一发明人的神经血管耦合对齐与残差可靠性融合脑电近红外情绪回归方法，以及两项处于初稿审核阶段的 AI 策略计算平台专利；并拥有软件著作权一项（大宗商品 AI 分析系统 V1.0，登记号 2026SR0328287）。详见[简历](/cv/)。
 
-除此之外，我主要从事**具身智能**方向的研究（点击单位名可跳转对应[项目](/projects/)）：曾在 [**简智新创**](/projects/genrobot_dexhand/) 实习，担任灵巧手算法实习生，覆盖 HKT 异构外骨骼重定向、Ego-SMPL 跨本体回放、MANUS+VIVE 手—臂协同遥操作与接触式手内操作 Sim-to-Real；[**宇树科技**](/projects/unitree_g1/) 实习，开展基于 G1 人形的 loco-manipulation 人在环强化学习；[**普渡机器人**](/projects/pudu_vla/) 实习，开展 VLA 基座模型复现、自研本体适配、推理加速与人在环机械臂真机强化学习后训练；[**安克创新**](/projects/anker_embodied/) 实习，开展模型部署、四足多模态数据产线、遥操作数据采集与 VLM 自动标注产线；以及 [**西湖大学 CenBRAIN 实验室**](/projects/cenbrain_ibci/) 实习，开展侵入式脑机接口的 sEEG 语音解码。
+除此之外，我主要从事**具身智能**方向的研究（点击单位名可跳转对应[项目](/projects/)）：曾在 [**简智新创**](/projects/genrobot_dexhand/) 实习，担任灵巧手算法实习生，覆盖 HKT 异构外骨骼重定向、人类第一视角 Ego-SMPL 的纯视觉跨本体控制、MANUS+VIVE（≤25 ms）手—臂协同遥操作与接触式手内操作 Sim-to-Real；[**宇树科技**](/projects/unitree_g1/) 实习，开展基于 G1 人形的 loco-manipulation 人在环强化学习；[**普渡机器人**](/projects/pudu_vla/) 实习，开展 VLA 基座模型复现、自研本体适配、推理加速与人在环机械臂真机强化学习后训练；[**安克创新**](/projects/anker_embodied/) 实习，开展模型部署、四足多模态数据产线、遥操作数据采集与 VLM 自动标注产线；以及 [**西湖大学 CenBRAIN 实验室**](/projects/cenbrain_ibci/) 实习，开展侵入式脑机接口的 sEEG 语音解码。
 
 我关注如何打通感知、语言与行动的闭环——构建能够“看见、理解并在物理世界中行动”的机器人与神经接口。
 
