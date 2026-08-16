@@ -150,7 +150,7 @@ related_publications: false
 ## Ego Motion → Cross-Embodiment Control
 
 <div class="genrobot-method-note">
-  <span class="genrobot-method-kicker">Method 02 · Unified SMPL Motion Replay</span>
+  <span class="genrobot-method-kicker">Method 02 · Unified SMPL Motion Control</span>
   <p>以<strong>人类第一视角 Ego 纯视觉数据</strong>输出的 <strong>SMPL 全身骨架与 Hand21 手部轨迹</strong>作为统一动作表示，使用固定会话坐标变换和相对根节点表征，避免逐帧刚体拟合带来的抖动与尺度漂移；再通过本体适配器将同一段动作分别映射至 <strong>Tianji + Wuji</strong> 与 <strong>Unitree G1</strong>。</p>
   <div class="genrobot-pipeline" aria-label="跨本体动作回放流程">
     <span>Ego MCAP</span><b>→</b><span>SMPL + Hand21</span><b>→</b><span>本体适配器</span><b>→</b><span>Tianji + Wuji</span><b>↔</b><span>Unitree G1 / SONIC</span>
