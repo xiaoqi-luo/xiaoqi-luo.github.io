@@ -214,6 +214,15 @@ related_publications: false
 - 在 **Isaac Lab** 中通过 **reference-state initialization**、**residual joint-position action** 与 **PPO** 训练 tracking policy；
 - 最终迁移到**真机**完成转笔任务。
 
+### 接触保持转笔（Retarget + Tracking）
+
+<div class="row justify-content-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include video.liquid path="assets/video/genrobot_pen_spinning_sim.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+  </div>
+</div>
+<div class="caption">接触保持重定向与策略轨迹跟踪的双视角转笔仿真演示。</div>
+
 ### Revo3 右手 · HORA 转球（Sim-to-Real）
 
 <div class="genrobot-method-note">
