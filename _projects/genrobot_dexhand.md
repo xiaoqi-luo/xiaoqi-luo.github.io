@@ -85,10 +85,10 @@ related_publications: false
 
 <div class="row justify-content-center">
   <div class="col-sm-10 mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/genrobot_hkt_exoskeleton_retarget.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    {% include video.liquid path="assets/video/genrobot_hkt_exoskeleton_retarget_protected.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
   </div>
 </div>
-<div class="caption">异构外骨骼动作到灵巧手的真机重定向与遥操演示。</div>
+<div class="caption">异构外骨骼动作到灵巧手的真机重定向与遥操演示（外骨骼结构已作马赛克保密处理）。</div>
 
 ## 自研 Dex 遥操 / 控制适配（Retarget）
 
@@ -129,10 +129,10 @@ related_publications: false
     {% include video.liquid path="assets/video/genrobot_dex_mocap.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/genrobot_dex_retarget.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    {% include video.liquid path="assets/video/genrobot_dex_retarget_protected.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
   </div>
 </div>
-<div class="caption">左：动捕（mocap）驱动的遥操；右：Dex 外骨骼遥操作实机演示。</div>
+<div class="caption">左：动捕（mocap）驱动的遥操；右：Dex 外骨骼遥操作实机演示（外骨骼结构已作马赛克保密处理）。</div>
 
 ### 动捕数据采集与处理
 
