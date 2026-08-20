@@ -27,7 +27,7 @@ toc:
 自动化（人工智能）学院 · 控制工程 ｜ **GPA 4.05/4.5** ｜ 导师：**高云园 教授**
 
 - 研究方向：多模态时序信号建模与解码、视觉—语言—动作模型及具身智能。
-- 已发表 SCI 论文 1 篇；以第一作者投稿 *AAAI-27* 的 NeuralIntent，另有 *IEEE Transactions on Affective Computing* 小修返修在审，以及 ExoFactor（ICRA-27）在写。
+- 已发表/接收 SCI 论文 2 篇；以第一作者投稿 *AAAI-27* 的 NeuralIntent，另有 ExoFactor（ICRA-27）在写。
 - 获学院羽毛球男子单打第一。
 
 ### 华东交通大学 — 工学学士 ｜ 2020.09 – 2024.06
@@ -78,7 +78,7 @@ toc:
 
 - **Xiaoqi Luo（第一作者）**, Weixiang Gao, Zhengnan Zhang, Taojie Xu, Mo Zhou, Xun Shi, Yunyuan Gao. "[NeuralIntent: Bridging Noninvasive EEG and Embodied Foundation Models with Continuous Neural Intent Tokens](https://openreview.net/forum?id=HD4GoLhMkq)." *The Forty-First AAAI Conference on Artificial Intelligence (AAAI-27)*（**投稿在审 / Under Review**，Submission 37074）。框架 **NeuralIntent**；基准 **EIG-Bench**。
 - [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Xu Shao, Yanhua Qin. "Progressive Cross-Modal Attention Network for Brain–Computer Interface Decoding Using EEG and fNIRS." *Applied Soft Computing*, **199C (2026) 115318**（IF≈7.8 · JCR Q1 · 中科院计算机 2区 TOP）。2026-04-24 接收，2026-06-05 online。[doi:10.1016/j.asoc.2026.115318](https://doi.org/10.1016/j.asoc.2026.115318)。框架 **PCMAN**。
-- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Jiangwen Lu, Yingchun Zhang, Ruyue Huang. "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG–fNIRS Emotion Regression." *IEEE Transactions on Affective Computing*（IF≈9.8 · JCR Q1 · 中科院计算机 1区 TOP；**小修返修，在审 / Under Review, Minor Revision Returned**）。框架 **PhysioSync**。
+- [Yunyuan Gao（高云园，导师）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), **Xiaoqi Luo（第二作者（导师一作））**, Zhengnan Zhang, Jiangwen Lu, Yingchun Zhang, Ruyue Huang. "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG–fNIRS Emotion Regression." *IEEE Transactions on Affective Computing*（IF≈9.8 · JCR Q1 · 中科院计算机 1区 TOP；**已接收 / Accepted，2026-08-19**）。框架 **PhysioSync**。
 - Zheng Hu, **Xiaoqi Luo（第二作者）**, Xu Shao, [Yunyuan Gao（高云园，导师；通讯作者）](https://scholar.google.com/citations?user=fYI7Ic4AAAAJ), Yanhua Qin. "PSSF: A Phase-Space and State-Space Fusion Method for EEG Source Localization and Feature Decoding." *Journal of Neural Engineering*（IF≈4.0 · JCR Q2；**在审 / Under Review**，JNE-111255）。框架 **PSSF**。
 - Jiangwen Lu, **Xiaoqi Luo（第二作者）**, Weixiang Gao, Ruyue Huang, Yunyuan Gao. "Neuro-SSCL: A Neuro-Aware Semi-Supervised Contrastive Learning for Cross-Subject EEG Emotion Recognition." *IEEE Journal of Biomedical and Health Informatics*（IF≈6.8 · JCR Q1 · 中科院医学 2区 TOP；**在审 / Under Review**）。框架 **Neuro-SSCL**。
 - Xiao Wu, Weixiang Gao, **Xiaoqi Luo（第三作者）**, Zhengnan Zhang, Yunyuan Gao. "Attention-Guided Low-Rank Tensor Decomposition for Feature Analysis of MI-EEG Signals." *IEEE Transactions on Emerging Topics in Computational Intelligence*（IF≈6.5 · JCR Q1 · 中科院计算机 2区；**在审 / Under Review**）。框架 **AG-LRTD**。

@@ -6,9 +6,9 @@ cv:
   image: ""
   summary: >
     Master's student in Control Engineering at Hangzhou Dianzi University, working on
-    multimodal time-series signal modeling and decoding (EEG-fNIRS). Two first-author
-    papers published in Q1 TOP journals (Applied Soft Computing; IEEE Transactions on
-    Affective Computing). Internship experience in vision-language-action (VLA) models,
+    multimodal time-series signal modeling and decoding (EEG-fNIRS). Two second-author
+    papers published/accepted in Q1 TOP journals (Applied Soft Computing; IEEE Transactions on
+    Affective Computing; advisor first author). Internship experience in vision-language-action (VLA) models,
     embodied robot learning, and invasive brain-computer interface speech decoding.
     Actively seeking PhD opportunities and full-time research roles.
 
@@ -38,7 +38,7 @@ cv:
         courses: "Multimodal Time-Series Signal Modeling & Decoding"
         highlights:
           - Research focus on multimodal EEG-fNIRS decoding.
-          - Two first-author papers published/accepted in Q1 TOP journals — Applied Soft Computing (IF≈6.6) and IEEE Transactions on Affective Computing (IF≈9.8).
+          - Two second-author papers published/accepted in Q1 TOP journals — Applied Soft Computing (IF≈7.8) and IEEE Transactions on Affective Computing (IF≈9.8); advisor first author.
 
       - institution: East China Jiaotong University
         location: Nanchang, China
@@ -96,21 +96,21 @@ cv:
         end_date: 2026-04
 
     Awards:
-      - title: First-author paper in IEEE Transactions on Affective Computing
+      - title: Accepted paper in IEEE Transactions on Affective Computing
         authors:
           - "Xiaoqi Luo"
-        date: 2025-01-01
+        date: 2026-08-19
         awarder: IEEE
         url: # TODO: add DOI / paper URL
-        summary: SCI / JCR Q1 TOP journal, Impact Factor ≈ 9.8. First-author EEG-fNIRS multimodal decoding work.
+        summary: SCI / JCR Q1 TOP journal, Impact Factor ≈ 9.8. Second author (advisor first author); accepted on 2026-08-19.
 
-      - title: First-author paper in Applied Soft Computing
+      - title: Published paper in Applied Soft Computing
         authors:
           - "Xiaoqi Luo"
         date: 2024-09-01
         awarder: Elsevier
         url: # TODO: add DOI / paper URL
-        summary: SCI / JCR Q1 TOP journal, Impact Factor ≈ 6.6. First-author EEG-fNIRS multimodal decoding work.
+        summary: SCI / JCR Q1 TOP journal, Impact Factor ≈ 7.8. Second author (advisor first author).
 
       - title: Academic Scholarships
         authors:
@@ -120,23 +120,30 @@ cv:
         summary: Multiple academic scholarships during undergraduate studies.
 
     Publications:
-      - title: "TODO: replace with exact paper title — EEG-fNIRS Multimodal Decoding (Applied Soft Computing)"
+      - title: "Progressive Cross-Modal Attention Network for Brain-Computer Interface Decoding Using EEG and fNIRS"
         authors:
+          - Yunyuan Gao
           - Xiaoqi Luo
-          - TODO co-authors
-        publisher: Applied Soft Computing (Elsevier) — SCI/JCR Q1 TOP, IF≈6.6
-        releaseDate: 2024-09-01
-        url: # TODO: DOI link
-        summary: First-author work on multimodal EEG-fNIRS signal decoding. Replace this entry with the exact title, co-authors, and DOI.
+          - Zhengnan Zhang
+          - Xu Shao
+          - Yanhua Qin
+        publisher: Applied Soft Computing, 199C (2026) 115318 — SCI/JCR Q1 TOP, IF≈7.8
+        releaseDate: 2026-06-05
+        url: https://doi.org/10.1016/j.asoc.2026.115318
+        summary: Second-author work (advisor first author). PCMAN is published online.
 
-      - title: "TODO: replace with exact paper title — EEG-fNIRS Multimodal Decoding (IEEE Transactions on Affective Computing)"
+      - title: "Neurovascular Alignment and Reliability-Aware Fusion for Continuous EEG-fNIRS Emotion Regression"
         authors:
+          - Yunyuan Gao
           - Xiaoqi Luo
-          - TODO co-authors
-        publisher: IEEE Transactions on Affective Computing — SCI/JCR Q1 TOP, IF≈9.8
-        releaseDate: 2025-01-01
-        url: # TODO: DOI link
-        summary: First-author work on multimodal EEG-fNIRS signal decoding. Replace this entry with the exact title, co-authors, and DOI.
+          - Zhengnan Zhang
+          - Jiangwen Lu
+          - Yingchun Zhang
+          - Ruyue Huang
+        publisher: IEEE Transactions on Affective Computing — Accepted; SCI/JCR Q1 TOP, IF≈9.8
+        releaseDate: 2026-08-19
+        url: /publications/#gao2026physiosync
+        summary: Second-author work (advisor first author). PhysioSync was accepted on 2026-08-19.
 
     Skills:
       - name: Programming & ML
