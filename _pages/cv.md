@@ -42,9 +42,11 @@ toc:
 ### 简智新创（Genrobot.ai）— 灵巧手算法实习生 ｜ 2026.06 – 2026.09
 围绕灵巧手遥操作、异构运动重定向、跨本体动作回放与密集接触手内操作的 RL Sim-to-Real 开展工作。
 
-- **ExoFactor / HKT 异构外骨骼重定向**：将异构外骨骼 FK 编译为拓扑无关的几何 Token，以几何条件化跨注意力学习“外骨骼—21 keypoints—灵巧手”通用映射，支持少样本快速标定与高精度遥操作。
+- **CoRL 演示｜动作迁移与灵巧手遥操作**：将第一视角的人手示范迁移到双臂与灵巧手，完成抓笔和插笔的仿真验证及真机动作回放；参与自研异构外骨骼重定向，实现外骨骼驱动灵巧手的真机遥操作。
+
+  [Ego2sim2real CORL demo](https://weixin.qq.com/sph/ADcHALP1fG) · [自研异构外骨骼重定向](https://weixin.qq.com/sph/Areh1VJXrx) · [真机与仿真视频](/projects/genrobot_dexhand/#cross-embodiment)
+
 - **接触保持 Retarget + RL Sim-to-Real**：针对转笔等密集接触任务保持手—物接触拓扑，生成物体位姿与 Hand21 参考轨迹；在 Isaac Lab 中以 reference-state initialization、residual joint-position action 与 PPO 训练 tracking policy，完成 Wuji Hand2 迁移验证；并在 Revo3 上完成 HORA 两阶段策略的真机手内转球部署。
-- **Ego 动作跨本体控制**：将人类第一视角 Ego 数据输出的 SMPL 骨架与 Hand21 统一重定向至 Tianji–Wuji 与 Unitree G1（SONIC）等异构本体，仅依赖 Ego 纯视觉输入完成多本体同步控制。
 - **MANUS+VIVE 手—臂协同遥操作**：以 MANUS 驱动 Wuji Hand2，双 VIVE Tracker 经相对 SE(3)、零点 1:1 映射与 One-Euro 滤波驱动 Tianji 左臂；接入 Marvin SDK IK 实现协同真机遥操作，端到端延迟控制在 **25 ms 以内**。
 
 ### 宇树科技 — 人形算法实习生 ｜ 2026.06（约一周）

@@ -69,6 +69,16 @@ related_publications: false
 
 2026.06 – 2026.09 在**简智新创**担任**灵巧手算法实习生**，聚焦五条技术线：**HKT 异构外骨骼重定向**、**Dex 实时遥操与数据采集**、**Ego-SMPL 纯视觉跨本体控制**、**MANUS+VIVE 手—臂协同遥操作**，以及**密集接触手内操作的 RL Sim-to-Real**。
 
+## CoRL 演示
+
+将第一视角的人手示范迁移到双臂与灵巧手，完成抓笔和插笔的仿真验证及真机动作回放；参与自研异构外骨骼重定向，实现外骨骼驱动灵巧手的真机遥操作。
+
+<div class="d-flex flex-wrap" style="gap: 0.5rem; margin-bottom: 1.5rem;">
+  <a class="btn btn-sm btn-outline-primary" href="https://weixin.qq.com/sph/ADcHALP1fG">Ego2sim2real CORL demo</a>
+  <a class="btn btn-sm btn-outline-primary" href="https://weixin.qq.com/sph/Areh1VJXrx">自研异构外骨骼重定向</a>
+  <a class="btn btn-sm btn-outline-primary" href="#cross-embodiment">真机与仿真视频</a>
+</div>
+
 <span id="exofactor"></span>
 
 ## ExoFactor / HKT：异构外骨骼重定向
