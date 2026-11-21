@@ -57,6 +57,46 @@ related_publications: false
     font-weight: 700;
   }
 
+  .genrobot-demo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .genrobot-demo-grid figure {
+    min-width: 0;
+    margin: 0;
+    padding: 0.7rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.65rem;
+    background: var(--global-card-bg-color);
+  }
+
+  .genrobot-demo-grid video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    border-radius: 0.4rem;
+    background: #111720;
+  }
+
+  .genrobot-demo-grid figcaption {
+    padding: 0.65rem 0.2rem 0.15rem;
+    text-align: left;
+  }
+
+  .genrobot-demo-grid small {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--global-text-color-light);
+  }
+
+  @media (max-width: 575px) {
+    .genrobot-demo-grid { grid-template-columns: minmax(0, 1fr); }
+  }
+
   html[data-theme="dark"] .genrobot-method-note {
     background: linear-gradient(
       135deg,
@@ -76,8 +116,31 @@ related_publications: false
 <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-bottom: 1.5rem;">
   <a class="btn btn-sm btn-outline-primary" href="https://weixin.qq.com/sph/ADcHALP1fG">Ego2sim2real CORL demo</a>
   <a class="btn btn-sm btn-outline-primary" href="https://weixin.qq.com/sph/Areh1VJXrx">自研异构外骨骼重定向</a>
-  <a class="btn btn-sm btn-outline-primary" href="#cross-embodiment">真机与仿真视频</a>
+  <a class="btn btn-sm btn-outline-primary" href="#corl-videos">真机与仿真视频</a>
 </div>
+
+<h3 id="corl-videos">真机与仿真视频</h3>
+
+{% assign corl_videos = "genrobot_corl_pen_real|真机 · 双臂持筒与插笔|现场实物演示，使用记号笔。;genrobot_corl_ego_sim|示范对照 · Ego 与机器人仿真|左侧是第一视角的人手示范，右侧是机器人仿真，按原速同屏。;genrobot_corl_insertion_sim|仿真 · 插笔与释放近景|固定机位展示毛笔入筒、手指释放和撤离。;genrobot_corl_trajectory_compare|仿真对照 · 原版与改进版|在同一仿真场景中对比插笔、撤手和回位。" | split: ";" %}
+<div class="genrobot-demo-grid">
+  {% for demo in corl_videos %}
+    {% assign demo_parts = demo | split: "|" %}
+    {% assign video_path = '/assets/video/' | append: demo_parts[0] | append: '.mp4' %}
+    {% assign poster_path = '/assets/video/' | append: demo_parts[0] | append: '.jpg' %}
+    <figure>
+      <video controls playsinline preload="none" poster="{{ poster_path | relative_url }}" aria-labelledby="{{ demo_parts[0] }}-label">
+        <source src="{{ video_path | relative_url }}" type="video/mp4">
+        <a href="{{ video_path | relative_url }}">打开视频</a>
+      </video>
+      <figcaption>
+        <strong id="{{ demo_parts[0] }}-label">{{ demo_parts[1] }}</strong>
+        <small>{{ demo_parts[2] }}</small>
+      </figcaption>
+    </figure>
+  {% endfor %}
+</div>
+
+更多真机与仿真演示：[外骨骼遥操作](#exofactor) · [双臂与人形机器人回放](#cross-embodiment) · [手臂协同遥操作](#manus-vive-teleop)
 
 <span id="exofactor"></span>
 

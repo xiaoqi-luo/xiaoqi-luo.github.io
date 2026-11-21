@@ -44,7 +44,7 @@ toc:
 
 - **CoRL 演示｜动作迁移与灵巧手遥操作**：将第一视角的人手示范迁移到双臂与灵巧手，完成抓笔和插笔的仿真验证及真机动作回放；参与自研异构外骨骼重定向，实现外骨骼驱动灵巧手的真机遥操作。
 
-  [Ego2sim2real CORL demo](https://weixin.qq.com/sph/ADcHALP1fG) · [自研异构外骨骼重定向](https://weixin.qq.com/sph/Areh1VJXrx) · [真机与仿真视频](/projects/genrobot_dexhand/#cross-embodiment)
+  [Ego2sim2real CORL demo](https://weixin.qq.com/sph/ADcHALP1fG) · [自研异构外骨骼重定向](https://weixin.qq.com/sph/Areh1VJXrx) · [真机与仿真视频](/projects/genrobot_dexhand/#corl-videos)
 
 - **接触保持 Retarget + RL Sim-to-Real**：针对转笔等密集接触任务保持手—物接触拓扑，生成物体位姿与 Hand21 参考轨迹；在 Isaac Lab 中以 reference-state initialization、residual joint-position action 与 PPO 训练 tracking policy，完成 Wuji Hand2 迁移验证；并在 Revo3 上完成 HORA 两阶段策略的真机手内转球部署。
 - **MANUS+VIVE 手—臂协同遥操作**：以 MANUS 驱动 Wuji Hand2，双 VIVE Tracker 经相对 SE(3)、零点 1:1 映射与 One-Euro 滤波驱动 Tianji 左臂；接入 Marvin SDK IK 实现协同真机遥操作，端到端延迟控制在 **25 ms 以内**。
